@@ -704,6 +704,15 @@
                     </h4>
                 </div>
                 <div id="modalActivitiesList" class="grid grid-cols-2 gap-2"></div>
+                
+                <!-- EIGENE AKTIVITÄT HINZUFÜGEN -->
+                <div class="pt-2 border-t border-slate-800/80 space-y-1.5">
+                    <label class="text-[10px] text-slate-400 font-bold block">Eigene Aktivität hinzufügen:</label>
+                    <div class="flex space-x-2">
+                        <input type="text" id="customActivityInput" placeholder="z. B. Freispringen, Massage..." class="flex-1 bg-slate-900 border border-slate-800 rounded-xl px-3 py-1.5 text-xs text-white">
+                        <button onclick="addCustomHorseActivity()" class="bg-brand-500 text-slate-950 font-bold px-3 py-1.5 rounded-xl text-xs hover:bg-brand-400 transition">+</button>
+                    </div>
+                </div>
             </div>
 
             <!-- NOTIZEN -->
@@ -943,8 +952,7 @@
             { id: 'Ausritt', name: '🏇 Ausritt' },
             { id: 'Longiert', name: '⭕ Longiert' },
             { id: 'Bodenarbeit', name: '🎯 Bodenarbeit' },
-            { id: 'Spaziergang', name: '🐕 Spaziergang' },
-            { id: 'Weide/Pause', name: '🌾 Weide/Pause' }
+            { id: 'Spaziergang', name: '🐕 Spaziergang' }
         ];
 
         let nowTime = Date.now();
@@ -1211,7 +1219,7 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
             const container = document.getElementById('horseCalendarDayActivitiesList');
             let dayActs = (horse.history && horse.history[dateStr]) ? horse.history[dateStr] : [];
 
-            container.innerHTML = ALL_ACTIVITIES.map(act => {
+            let html = ALL_ACTIVITIES.map(act => {
                 let isSel = dayActs.includes(act.id);
                 return `
                     <button onclick="toggleHistoryActivityForHorse(${horse.id}, '${dateStr}', '${act.id}'); openHorseCalendarDayModal('${dateStr}');" 
@@ -1221,6 +1229,50 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
                     </button>
                 `;
             }).join('');
+
+            // Eigene Aktivitäten des Tages, die nicht in ALL_ACTIVITIES sind
+            let customActs = dayActs.filter(a => !ALL_ACTIVITIES.some(def => def.id === a));
+            customActs.forEach(customAct => {
+                html += `
+                    <div class="w-full text-xs p-2.5 rounded-xl border bg-brand-500 text-slate-950 font-bold border-brand-400 flex items-center justify-between">
+                        <span>✨ ${customAct}</span>
+                        <button onclick="toggleHistoryActivityForHorse(${horse.id}, '${dateStr}', '${customAct}'); openHorseCalendarDayModal('${dateStr}');" class="text-slate-950 hover:text-rose-900 px-1 font-bold">×</button>
+                    </div>
+                `;
+            });
+
+            html += `
+                <div class="pt-2 flex space-x-2">
+                    <input type="text" id="customDayActivityInput_${dateStr}" placeholder="Eigene Aktivität..." class="flex-1 bg-slate-900 border border-slate-800 rounded-xl px-3 py-1.5 text-xs text-white">
+                    <button onclick="addCustomDayActivity('${dateStr}')" class="bg-brand-500 text-slate-950 font-bold px-3 py-1.5 rounded-xl text-xs hover:bg-brand-400 transition">+</button>
+                </div>
+            `;
+
+            container.innerHTML = html;
+        }
+
+        function addCustomDayActivity(dateStr) {
+            if (!activeModalHorseId) return;
+            const input = document.getElementById(`customDayActivityInput_${dateStr}`);
+            if (!input) return;
+            let val = input.value.trim();
+            if (!val) return;
+
+            const horse = horses.find(h => h.id === activeModalHorseId);
+            if (!horse) return;
+
+            if (!horse.history) horse.history = {};
+            if (!horse.history[dateStr]) horse.history[dateStr] = [];
+
+            if (!horse.history[dateStr].includes(val)) {
+                horse.history[dateStr].push(val);
+            }
+
+            saveAllData();
+            renderHorses();
+            renderTopMoverCard();
+            renderDashboardActivityFeed();
+            openHorseCalendarDayModal(dateStr);
         }
 
         function toggleHistoryActivityForHorse(horseId, dateStr, actId) {
@@ -1589,7 +1641,7 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
             let todayStr = new Date().toISOString().split('T')[0];
             let currentActs = (horse.history && horse.history[todayStr]) ? horse.history[todayStr] : [];
 
-            container.innerHTML = ALL_ACTIVITIES.map(act => {
+            let html = ALL_ACTIVITIES.map(act => {
                 let isSelected = currentActs.includes(act.id);
                 let btnStyle = isSelected 
                     ? 'bg-brand-500 text-slate-950 font-extrabold border-brand-400 shadow-lg shadow-brand-500/20' 
@@ -1602,6 +1654,44 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
                     </button>
                 `;
             }).join('');
+
+            // Eigene benutzerdefinierte Aktivitäten für heute anzeigen
+            let customActs = currentActs.filter(a => !ALL_ACTIVITIES.some(def => def.id === a));
+            customActs.forEach(customAct => {
+                html += `
+                    <button onclick="toggleHorseActivity('${customAct}')" class="p-2.5 rounded-xl border text-xs transition flex items-center justify-between bg-brand-500 text-slate-950 font-extrabold border-brand-400 shadow-lg shadow-brand-500/20">
+                        <span>✨ ${customAct}</span>
+                        <i class="fa-solid fa-circle-check text-xs"></i>
+                    </button>
+                `;
+            });
+
+            container.innerHTML = html;
+        }
+
+        function addCustomHorseActivity() {
+            if (!activeModalHorseId) return;
+            const input = document.getElementById('customActivityInput');
+            let val = input.value.trim();
+            if (!val) return;
+
+            const horse = horses.find(h => h.id === activeModalHorseId);
+            if (horse) {
+                let todayStr = new Date().toISOString().split('T')[0];
+                if (!horse.history) horse.history = {};
+                if (!horse.history[todayStr]) horse.history[todayStr] = [];
+
+                if (!horse.history[todayStr].includes(val)) {
+                    horse.history[todayStr].push(val);
+                }
+
+                input.value = '';
+                saveAllData();
+                renderHorses();
+                renderTopMoverCard();
+                renderDashboardActivityFeed();
+                renderModalActivityButtons(horse);
+            }
         }
 
         function toggleHorseActivity(activityId) {
