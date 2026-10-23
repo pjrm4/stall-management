@@ -30,27 +30,27 @@
         }
     </script>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans pb-32 min-h-screen selection:bg-brand-500 selection:text-white">
+<body class="bg-gradient-to-br from-emerald-50/50 via-amber-50/30 to-slate-100 text-slate-800 font-sans pb-32 min-h-screen selection:bg-brand-500 selection:text-white">
 
     <!-- Background Blurs -->
-    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-lg h-72 bg-brand-600/20 blur-[120px] pointer-events-none rounded-full"></div>
-    <div class="fixed bottom-10 left-1/2 -translate-x-1/2 w-full max-w-lg h-60 bg-amber-500/15 blur-[100px] pointer-events-none rounded-full"></div>
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-lg h-72 bg-emerald-300/30 blur-[120px] pointer-events-none rounded-full"></div>
+    <div class="fixed bottom-10 left-1/2 -translate-x-1/2 w-full max-w-lg h-60 bg-amber-200/40 blur-[100px] pointer-events-none rounded-full"></div>
 
     <!-- Header -->
-    <header class="sticky top-0 z-30 bg-slate-900/80 backdrop-blur-xl border-b border-slate-800/80">
+    <header class="sticky top-0 z-30 bg-white/80 backdrop-blur-xl border-b border-emerald-100 shadow-sm">
         <div class="max-w-md mx-auto px-4 py-3.5 flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-brand-600 to-emerald-400 flex items-center justify-center text-slate-950 shadow-lg shadow-brand-500/20 font-bold">
+                <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-brand-600 to-emerald-400 flex items-center justify-center text-white shadow-lg shadow-brand-500/30 font-bold">
                     <i class="fa-solid fa-horse text-lg"></i>
                 </div>
                 <div>
-                    <h1 class="font-bold text-base text-white tracking-tight">Unser Offenstall</h1>
-                    <p class="text-[11px] text-slate-400 font-medium flex items-center space-x-1">
+                    <h1 class="font-bold text-base text-slate-900 tracking-tight">Unser Offenstall</h1>
+                    <p class="text-[11px] text-emerald-700 font-semibold flex items-center space-x-1">
                         <span>Smart Stable Hub</span>
                     </p>
                 </div>
             </div>
-            <div class="text-[11px] bg-slate-800/80 border border-slate-700/60 px-3 py-1.5 rounded-full font-semibold flex items-center space-x-2 text-slate-300">
+            <div class="text-[11px] bg-emerald-50 border border-emerald-200 px-3 py-1.5 rounded-full font-semibold flex items-center space-x-2 text-emerald-800 shadow-sm">
                 <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
                 <span>Online</span>
             </div>
@@ -64,52 +64,52 @@
         <div id="viewDashboard" class="space-y-4 tab-content">
             
             <!-- Stalldienst Heute Banner -->
-            <section class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-amber-500/20 via-slate-900 to-slate-900 border border-amber-500/30 p-4 shadow-xl backdrop-blur-md">
+            <section class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-amber-500/15 via-white to-amber-50/30 border border-amber-200/80 p-4 shadow-xl backdrop-blur-md">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center space-x-3">
-                        <div class="w-11 h-11 rounded-2xl bg-amber-500/20 border border-amber-500/40 text-amber-400 flex items-center justify-center text-lg shadow-inner">
+                        <div class="w-11 h-11 rounded-2xl bg-amber-500/20 border border-amber-300 text-amber-700 flex items-center justify-center text-lg shadow-inner">
                             <i class="fa-solid fa-user-check"></i>
                         </div>
                         <div>
-                            <span class="text-[10px] uppercase font-bold text-amber-400/90 tracking-wider">Stalldienst Heute</span>
-                            <h3 id="todayShiftPerson" class="font-extrabold text-lg text-white">Daniela</h3>
+                            <span class="text-[10px] uppercase font-bold text-amber-700 tracking-wider">Stalldienst Heute</span>
+                            <h3 id="todayShiftPerson" class="font-extrabold text-lg text-slate-900">Daniela</h3>
                         </div>
                     </div>
-                    <span id="todayShiftBadge" class="bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+                    <span id="todayShiftBadge" class="bg-amber-100 text-amber-800 border border-amber-300 text-xs font-bold px-3 py-1 rounded-full shadow-sm">
                         Regulär
                     </span>
                 </div>
             </section>
 
             <!-- TOP MOVER BANNER -->
-            <section id="topMoverCard" class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-amber-500/20 via-slate-900 to-slate-900 border border-amber-500/40 p-4 shadow-xl backdrop-blur-md">
+            <section id="topMoverCard" class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-amber-500/15 via-white to-amber-50/30 border border-amber-200/80 p-4 shadow-xl backdrop-blur-md">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center space-x-3">
-                        <div class="w-11 h-11 rounded-2xl bg-amber-500/20 border border-amber-500/40 text-amber-400 flex items-center justify-center text-xl shadow-inner">
+                        <div class="w-11 h-11 rounded-2xl bg-amber-500/20 border border-amber-300 text-amber-700 flex items-center justify-center text-xl shadow-inner">
                             🏆
                         </div>
                         <div>
-                            <span class="text-[10px] uppercase font-extrabold text-amber-400 tracking-wider block">Stall Top-Mover</span>
-                            <h3 id="topMoverName" class="font-extrabold text-base text-white">Shirin</h3>
+                            <span class="text-[10px] uppercase font-extrabold text-amber-700 tracking-wider block">Stall Top-Mover</span>
+                            <h3 id="topMoverName" class="font-extrabold text-base text-slate-900">Shirin</h3>
                         </div>
                     </div>
                     <div class="text-right">
-                        <span id="topMoverStreak" class="text-xs font-extrabold bg-amber-500 text-slate-950 px-3 py-1 rounded-full inline-block shadow-md">🔥 3 Tage Streak</span>
-                        <p id="topMoverSubtext" class="text-[9px] text-slate-400 mt-1">Längste Serie im Stall!</p>
+                        <span id="topMoverStreak" class="text-xs font-extrabold bg-amber-400 text-slate-900 px-3 py-1 rounded-full inline-block shadow-md">🔥 3 Tage Streak</span>
+                        <p id="topMoverSubtext" class="text-[9px] text-slate-500 mt-1">Längste Serie im Stall!</p>
                     </div>
                 </div>
             </section>
 
             <!-- Schwarzes Brett -->
-            <section class="rounded-3xl bg-slate-900/90 border border-slate-800 p-4 shadow-xl backdrop-blur-md space-y-3">
+            <section class="rounded-3xl bg-white/90 border border-emerald-100 p-4 shadow-xl backdrop-blur-md space-y-3">
                 <div class="flex justify-between items-center">
-                    <h2 class="font-bold text-white flex items-center space-x-2 text-sm">
-                        <span class="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-400 border border-amber-500/30 flex items-center justify-center">
+                    <h2 class="font-bold text-slate-900 flex items-center space-x-2 text-sm">
+                        <span class="w-8 h-8 rounded-xl bg-amber-100 text-amber-700 border border-amber-200 flex items-center justify-center">
                             <i class="fa-solid fa-note-sticky text-xs"></i>
                         </span>
                         <span>Schwarzes Brett</span>
                     </h2>
-                    <button onclick="openNoteModal()" class="text-xs bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 px-3.5 py-1.5 rounded-xl font-bold hover:brightness-110 transition shadow-md flex items-center space-x-1">
+                    <button onclick="openNoteModal()" class="text-xs bg-gradient-to-r from-amber-500 to-amber-600 text-white px-3.5 py-1.5 rounded-xl font-bold hover:brightness-110 transition shadow-md shadow-amber-500/20 flex items-center space-x-1">
                         <i class="fa-solid fa-plus text-[10px]"></i>
                         <span>Notiz</span>
                     </button>
@@ -118,70 +118,70 @@
             </section>
 
             <!-- Wetter & Koppel-Status -->
-            <section class="rounded-3xl bg-slate-900/90 border border-slate-800 p-4 shadow-xl backdrop-blur-md space-y-3">
+            <section class="rounded-3xl bg-white/90 border border-emerald-100 p-4 shadow-xl backdrop-blur-md space-y-3">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center space-x-3">
-                        <div id="weatherIcon" class="w-10 h-10 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center text-lg">
+                        <div id="weatherIcon" class="w-10 h-10 rounded-2xl bg-emerald-100 border border-emerald-200 text-emerald-700 flex items-center justify-center text-lg">
                             <i class="fa-solid fa-sun"></i>
                         </div>
                         <div>
                             <div class="flex items-center space-x-2">
-                                <h3 id="weatherTitle" class="font-bold text-emerald-400 text-xs uppercase tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded-md border border-emerald-500/20">Koppeln OFFEN</h3>
-                                <span class="text-slate-500">|</span>
-                                <span id="currentWeatherStats" class="text-xs text-slate-300 font-medium">18°C · Trocken ☀️</span>
+                                <h3 id="weatherTitle" class="font-bold text-emerald-800 text-xs uppercase tracking-wider bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200">Koppeln OFFEN</h3>
+                                <span class="text-slate-300">|</span>
+                                <span id="currentWeatherStats" class="text-xs text-slate-600 font-medium">18°C · Trocken ☀️</span>
                             </div>
-                            <p id="weatherText" class="text-[11px] text-slate-400 mt-0.5">Wetter ideal für Weidegang!</p>
+                            <p id="weatherText" class="text-[11px] text-slate-500 mt-0.5">Wetter ideal für Weidegang!</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-slate-950/60 rounded-2xl p-3 border border-slate-800 space-y-2">
+                <div class="bg-emerald-50/50 rounded-2xl p-3 border border-emerald-100 space-y-2">
                     <div class="flex justify-between items-center text-xs">
-                        <span class="font-bold text-slate-300 flex items-center space-x-1.5">
-                            <i class="fa-solid fa-horse text-amber-400"></i>
+                        <span class="font-bold text-slate-700 flex items-center space-x-1.5">
+                            <i class="fa-solid fa-horse text-amber-600"></i>
                             <span>Koppel-Belegung</span>
                         </span>
-                        <span id="paddockOccupancyText" class="font-extrabold text-emerald-400">2 von 4 (50%)</span>
+                        <span id="paddockOccupancyText" class="font-extrabold text-emerald-700">2 von 4 (50%)</span>
                     </div>
-                    <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
+                    <div class="w-full bg-emerald-100 rounded-full h-2 overflow-hidden">
                         <div id="paddockProgressBar" class="bg-gradient-to-r from-emerald-500 to-amber-400 h-2 rounded-full transition-all duration-500" style="width: 50%"></div>
                     </div>
                 </div>
             </section>
 
             <!-- Aktive Pferde im Stall -->
-            <section class="rounded-3xl bg-slate-900/90 border border-slate-800 p-4 shadow-xl backdrop-blur-md space-y-3">
+            <section class="rounded-3xl bg-white/90 border border-emerald-100 p-4 shadow-xl backdrop-blur-md space-y-3">
                 <div class="flex items-center justify-between">
-                    <h2 class="font-bold text-white flex items-center space-x-2 text-sm">
-                        <span class="w-8 h-8 rounded-xl bg-rose-500/20 text-rose-400 border border-rose-500/30 flex items-center justify-center">
+                    <h2 class="font-bold text-slate-900 flex items-center space-x-2 text-sm">
+                        <span class="w-8 h-8 rounded-xl bg-rose-100 text-rose-600 border border-rose-200 flex items-center justify-center">
                             <i class="fa-solid fa-fire text-xs"></i>
                         </span>
                         <span>Heute im Stall aktiv</span>
                     </h2>
-                    <span class="text-[10px] bg-rose-500/10 text-rose-400 border border-rose-500/20 px-2.5 py-0.5 rounded-full font-bold">Motivation 💪</span>
+                    <span class="text-[10px] bg-rose-50 text-rose-700 border border-rose-200 px-2.5 py-0.5 rounded-full font-bold">Motivation 💪</span>
                 </div>
                 <div id="todayActivityFeed" class="space-y-2"></div>
             </section>
 
             <!-- Doppel-Karte für Stallregeln & Wichtige Kontakte -->
             <div class="grid grid-cols-2 gap-3">
-                <button onclick="openRulesModal()" class="rounded-3xl bg-slate-900/90 border border-slate-800 p-3.5 shadow-xl backdrop-blur-md flex flex-col justify-between items-start text-left hover:border-slate-700 transition space-y-3 group">
-                    <div class="w-9 h-9 rounded-2xl bg-amber-500/20 border border-amber-500/30 text-amber-400 flex items-center justify-center font-bold">
+                <button onclick="openRulesModal()" class="rounded-3xl bg-white/90 border border-emerald-100 p-3.5 shadow-xl backdrop-blur-md flex flex-col justify-between items-start text-left hover:border-emerald-300 transition space-y-3 group">
+                    <div class="w-9 h-9 rounded-2xl bg-amber-100 text-amber-700 border border-amber-200 flex items-center justify-center font-bold shadow-sm">
                         <i class="fa-solid fa-shield-halved text-sm"></i>
                     </div>
                     <div>
-                        <h3 class="font-bold text-white text-xs group-hover:text-amber-400 transition">Stallregeln</h3>
-                        <p class="text-[10px] text-slate-400 mt-0.5">Info & Hofordnung</p>
+                        <h3 class="font-bold text-slate-900 text-xs group-hover:text-amber-700 transition">Stallregeln</h3>
+                        <p class="text-[10px] text-slate-500 mt-0.5">Info & Hofordnung</p>
                     </div>
                 </button>
 
-                <button onclick="openContactsModal()" class="rounded-3xl bg-slate-900/90 border border-slate-800 p-3.5 shadow-xl backdrop-blur-md flex flex-col justify-between items-start text-left hover:border-slate-700 transition space-y-3 group">
-                    <div class="w-9 h-9 rounded-2xl bg-rose-500/20 border border-rose-500/30 text-rose-400 flex items-center justify-center font-bold">
+                <button onclick="openContactsModal()" class="rounded-3xl bg-white/90 border border-emerald-100 p-3.5 shadow-xl backdrop-blur-md flex flex-col justify-between items-start text-left hover:border-emerald-300 transition space-y-3 group">
+                    <div class="w-9 h-9 rounded-2xl bg-rose-100 text-rose-600 border border-rose-200 flex items-center justify-center font-bold shadow-sm">
                         <i class="fa-solid fa-phone-flip text-sm"></i>
                     </div>
                     <div>
-                        <h3 class="font-bold text-white text-xs group-hover:text-rose-400 transition">Wichtige Kontakte</h3>
-                        <p class="text-[10px] text-slate-400 mt-0.5">Anrufen & Verwalten</p>
+                        <h3 class="font-bold text-slate-900 text-xs group-hover:text-rose-600 transition">Wichtige Kontakte</h3>
+                        <p class="text-[10px] text-slate-500 mt-0.5">Anrufen & Verwalten</p>
                     </div>
                 </button>
             </div>
@@ -192,13 +192,13 @@
         <div id="viewHorses" class="space-y-4 tab-content hidden">
             <section class="space-y-3">
                 <div class="flex justify-between items-center">
-                    <h2 class="font-bold text-white flex items-center space-x-2 text-sm">
-                        <span class="w-8 h-8 rounded-xl bg-brand-500/20 text-brand-400 border border-brand-500/30 flex items-center justify-center">
+                    <h2 class="font-bold text-slate-900 flex items-center space-x-2 text-sm">
+                        <span class="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-700 border border-emerald-200 flex items-center justify-center">
                             <i class="fa-solid fa-horse-head text-xs"></i>
                         </span>
                         <span>Unsere Pferde</span>
                     </h2>
-                    <span id="horseCount" class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-full font-bold border border-slate-700">0 Pferde</span>
+                    <span id="horseCount" class="text-xs bg-emerald-50 text-emerald-800 px-2.5 py-1 rounded-full font-bold border border-emerald-200">0 Pferde</span>
                 </div>
 
                 <div id="horseList" class="space-y-2.5"></div>
@@ -207,42 +207,42 @@
 
         <!-- TAB 3: STALLDIENST PLAN -->
         <div id="viewShifts" class="space-y-4 tab-content hidden">
-            <section class="rounded-3xl bg-slate-900/90 border border-slate-800 p-4 shadow-xl backdrop-blur-md space-y-3">
+            <section class="rounded-3xl bg-white/90 border border-emerald-100 p-4 shadow-xl backdrop-blur-md space-y-3">
                 <div class="flex justify-between items-center mb-1">
-                    <h2 class="font-bold text-white flex items-center space-x-2 text-sm">
-                        <span class="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-400 border border-amber-500/30 flex items-center justify-center">
+                    <h2 class="font-bold text-slate-900 flex items-center space-x-2 text-sm">
+                        <span class="w-8 h-8 rounded-xl bg-amber-100 text-amber-700 border border-amber-200 flex items-center justify-center">
                             <i class="fa-solid fa-calendar-days text-xs"></i>
                         </span>
                         <span>Wochenansicht</span>
                     </h2>
-                    <div class="flex items-center space-x-1 bg-slate-950 p-1 rounded-2xl border border-slate-800">
-                        <button onclick="changeWeek(-1)" class="w-7 h-7 rounded-xl bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-xs text-slate-300 transition"><i class="fa-solid fa-chevron-left"></i></button>
-                        <span id="currentWeekDisplay" class="text-xs font-bold text-slate-300 px-2">Woche</span>
-                        <button onclick="changeWeek(1)" class="w-7 h-7 rounded-xl bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-xs text-slate-300 transition"><i class="fa-solid fa-chevron-right"></i></button>
+                    <div class="flex items-center space-x-1 bg-emerald-50/60 p-1 rounded-2xl border border-emerald-200">
+                        <button onclick="changeWeek(-1)" class="w-7 h-7 rounded-xl bg-white hover:bg-emerald-100 flex items-center justify-center text-xs text-slate-700 shadow-sm transition"><i class="fa-solid fa-chevron-left"></i></button>
+                        <span id="currentWeekDisplay" class="text-xs font-bold text-slate-700 px-2">Woche</span>
+                        <button onclick="changeWeek(1)" class="w-7 h-7 rounded-xl bg-white hover:bg-emerald-100 flex items-center justify-center text-xs text-slate-700 shadow-sm transition"><i class="fa-solid fa-chevron-right"></i></button>
                     </div>
                 </div>
                 <div id="shiftList" class="space-y-2"></div>
             </section>
 
-            <section class="rounded-3xl bg-slate-900/90 border border-slate-800 p-4 shadow-xl backdrop-blur-md space-y-3">
+            <section class="rounded-3xl bg-white/90 border border-emerald-100 p-4 shadow-xl backdrop-blur-md space-y-3">
                 <div class="flex items-center justify-between">
                     <div>
-                        <h2 class="font-bold text-white flex items-center space-x-2 text-sm">
-                            <span class="w-8 h-8 rounded-xl bg-rose-500/20 text-rose-400 border border-rose-500/30 flex items-center justify-center">
+                        <h2 class="font-bold text-slate-900 flex items-center space-x-2 text-sm">
+                            <span class="w-8 h-8 rounded-xl bg-rose-100 text-rose-600 border border-rose-200 flex items-center justify-center">
                                 <i class="fa-solid fa-calendar-week text-xs"></i>
                             </span>
                             <span>Monats-Übersicht</span>
                         </h2>
-                        <p class="text-[10px] text-slate-400 mt-0.5">Rot markiert = Tauschtage / Abweichungen</p>
+                        <p class="text-[10px] text-slate-500 mt-0.5">Rot markiert = Tauschtage / Abweichungen</p>
                     </div>
-                    <div class="flex items-center space-x-1 bg-slate-950 p-1 rounded-2xl border border-slate-800">
-                        <button onclick="changeShiftMonth(-1)" class="w-7 h-7 rounded-xl bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-xs text-slate-300 transition"><i class="fa-solid fa-chevron-left"></i></button>
-                        <span id="shiftMonthDisplay" class="text-xs font-bold text-slate-300 px-2">Monat</span>
-                        <button onclick="changeShiftMonth(1)" class="w-7 h-7 rounded-xl bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-xs text-slate-300 transition"><i class="fa-solid fa-chevron-right"></i></button>
+                    <div class="flex items-center space-x-1 bg-emerald-50/60 p-1 rounded-2xl border border-emerald-200">
+                        <button onclick="changeShiftMonth(-1)" class="w-7 h-7 rounded-xl bg-white hover:bg-emerald-100 flex items-center justify-center text-xs text-slate-700 shadow-sm transition"><i class="fa-solid fa-chevron-left"></i></button>
+                        <span id="shiftMonthDisplay" class="text-xs font-bold text-slate-700 px-2">Monat</span>
+                        <button onclick="changeShiftMonth(1)" class="w-7 h-7 rounded-xl bg-white hover:bg-emerald-100 flex items-center justify-center text-xs text-slate-700 shadow-sm transition"><i class="fa-solid fa-chevron-right"></i></button>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-7 gap-1 text-center text-[10px] font-bold text-slate-500 pb-1">
+                <div class="grid grid-cols-7 gap-1 text-center text-[10px] font-bold text-slate-400 pb-1">
                     <span>Mo</span><span>Di</span><span>Mi</span><span>Do</span><span>Fr</span><span>Sa</span><span>So</span>
                 </div>
 
@@ -252,34 +252,34 @@
 
         <!-- TAB 4: CHECKLISTE -->
         <div id="viewChecklist" class="space-y-4 tab-content hidden">
-            <section class="rounded-3xl bg-slate-900/90 border border-slate-800 p-4 shadow-xl backdrop-blur-md space-y-3">
+            <section class="rounded-3xl bg-white/90 border border-emerald-100 p-4 shadow-xl backdrop-blur-md space-y-3">
                 <div class="flex items-center justify-between">
-                    <h2 class="font-bold text-white flex items-center space-x-2 text-sm">
-                        <span class="w-8 h-8 rounded-xl bg-brand-500/20 text-brand-400 border border-brand-500/30 flex items-center justify-center">
+                    <h2 class="font-bold text-slate-900 flex items-center space-x-2 text-sm">
+                        <span class="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-700 border border-emerald-200 flex items-center justify-center">
                             <i class="fa-solid fa-list-check text-xs"></i>
                         </span>
                         <span>Tägliche Aufgaben</span>
                     </h2>
                     <div class="flex items-center space-x-2">
-                        <span id="checklistProgress" class="text-[10px] bg-brand-500/20 text-brand-400 border border-brand-500/30 px-2.5 py-0.5 rounded-full font-bold">0/4</span>
-                        <button onclick="resetChecklist()" class="text-slate-400 hover:text-amber-400 transition p-1 text-xs" title="Häkchen für neuen Tag zurücksetzen">
+                        <span id="checklistProgress" class="text-[10px] bg-emerald-100 text-emerald-800 border border-emerald-200 px-2.5 py-0.5 rounded-full font-bold">0/4</span>
+                        <button onclick="resetChecklist()" class="text-slate-400 hover:text-amber-600 transition p-1 text-xs" title="Häkchen für neuen Tag zurücksetzen">
                             <i class="fa-solid fa-rotate-right"></i>
                         </button>
                     </div>
                 </div>
 
                 <div class="flex space-x-2">
-                    <input type="text" id="newChecklistInput" placeholder="Neue Aufgabe eingeben..." class="flex-1 bg-slate-950 border border-slate-800 rounded-2xl px-3.5 py-2 text-xs text-slate-200 focus:outline-none focus:border-brand-500 transition placeholder:text-slate-600">
-                    <button onclick="addChecklistItem()" class="bg-brand-500 text-slate-950 font-extrabold px-4 py-2 rounded-2xl text-xs hover:bg-brand-400 transition shadow-lg shadow-brand-500/20">+</button>
+                    <input type="text" id="newChecklistInput" placeholder="Neue Aufgabe eingeben..." class="flex-1 bg-slate-50 border border-emerald-200 rounded-2xl px-3.5 py-2 text-xs text-slate-800 focus:outline-none focus:border-brand-500 transition placeholder:text-slate-400">
+                    <button onclick="addChecklistItem()" class="bg-brand-500 text-white font-extrabold px-4 py-2 rounded-2xl text-xs hover:bg-brand-600 transition shadow-lg shadow-brand-500/20">+</button>
                 </div>
 
                 <div id="checklistContainer" class="space-y-2 pt-1"></div>
             </section>
 
-            <section class="rounded-3xl bg-slate-900/90 border border-slate-800 p-4 shadow-xl backdrop-blur-md space-y-3">
+            <section class="rounded-3xl bg-white/90 border border-emerald-100 p-4 shadow-xl backdrop-blur-md space-y-3">
                 <div class="flex items-center justify-between">
-                    <h2 class="font-bold text-white flex items-center space-x-2 text-sm">
-                        <span class="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-400 border border-amber-500/30 flex items-center justify-center">
+                    <h2 class="font-bold text-slate-900 flex items-center space-x-2 text-sm">
+                        <span class="w-8 h-8 rounded-xl bg-amber-100 text-amber-700 border border-amber-200 flex items-center justify-center">
                             <i class="fa-solid fa-pen-to-square text-xs"></i>
                         </span>
                         <span>Dienst-Übergabe & Notizen</span>
@@ -287,10 +287,10 @@
                 </div>
 
                 <div class="space-y-2.5">
-                    <textarea id="shiftNoteInput" rows="3" placeholder="Z. B. Wasserbecken im Paddock gereinigt, neuen Heuballen angefangen..." class="w-full bg-slate-950 border border-slate-800 rounded-2xl p-3 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition placeholder:text-slate-600"></textarea>
+                    <textarea id="shiftNoteInput" rows="3" placeholder="Z. B. Wasserbecken im Paddock gereinigt, neuen Heuballen angefangen..." class="w-full bg-slate-50 border border-emerald-200 rounded-2xl p-3 text-xs text-slate-800 focus:outline-none focus:border-amber-500 transition placeholder:text-slate-400"></textarea>
                     <div class="flex justify-between items-center">
-                        <input type="text" id="shiftNoteAuthor" placeholder="Dein Name" class="w-1/2 bg-slate-950 border border-slate-800 rounded-2xl px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-amber-500 transition placeholder:text-slate-600">
-                        <button onclick="saveShiftNote()" class="bg-amber-500 text-slate-950 px-4 py-2 rounded-2xl text-xs font-bold hover:bg-amber-400 transition shadow-md shadow-amber-500/20">Eintragen</button>
+                        <input type="text" id="shiftNoteAuthor" placeholder="Dein Name" class="w-1/2 bg-slate-50 border border-emerald-200 rounded-2xl px-3 py-2 text-xs text-slate-800 focus:outline-none focus:border-amber-500 transition placeholder:text-slate-400">
+                        <button onclick="saveShiftNote()" class="bg-amber-500 text-white px-4 py-2 rounded-2xl text-xs font-bold hover:bg-amber-600 transition shadow-md shadow-amber-500/20">Eintragen</button>
                     </div>
                 </div>
 
@@ -302,66 +302,66 @@
         <div id="viewRoutine" class="space-y-4 tab-content hidden">
 
             <!-- Dynamic Koppel-Tagebuch & Rotation -->
-            <section class="rounded-3xl bg-slate-900/90 border border-slate-800 p-4 shadow-xl backdrop-blur-md space-y-3">
+            <section class="rounded-3xl bg-white/90 border border-emerald-100 p-4 shadow-xl backdrop-blur-md space-y-3">
                 <div class="flex justify-between items-center">
-                    <h2 class="font-bold text-white flex items-center space-x-2 text-sm">
-                        <span class="w-8 h-8 rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center">
+                    <h2 class="font-bold text-slate-900 flex items-center space-x-2 text-sm">
+                        <span class="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-700 border border-emerald-200 flex items-center justify-center">
                             <i class="fa-solid fa-seedling text-xs"></i>
                         </span>
                         <span>Koppel-Tagebuch & Rotation</span>
                     </h2>
-                    <button onclick="openAddPaddockModal()" class="text-xs bg-emerald-500 text-slate-950 px-3 py-1 rounded-xl font-bold hover:bg-emerald-400 transition">+ Koppel</button>
+                    <button onclick="openAddPaddockModal()" class="text-xs bg-emerald-500 text-white px-3 py-1 rounded-xl font-bold hover:bg-emerald-600 transition shadow-sm">+ Koppel</button>
                 </div>
 
                 <div id="paddocksContainer" class="grid grid-cols-2 gap-2 text-xs"></div>
             </section>
 
             <!-- Vorrats-Ampel mit automatischer Prognose -->
-            <section class="rounded-3xl bg-slate-900/90 border border-slate-800 p-4 shadow-xl backdrop-blur-md space-y-3">
+            <section class="rounded-3xl bg-white/90 border border-emerald-100 p-4 shadow-xl backdrop-blur-md space-y-3">
                 <div class="flex justify-between items-center">
-                    <h2 class="font-bold text-white flex items-center space-x-2 text-sm">
-                        <span class="w-8 h-8 rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center">
+                    <h2 class="font-bold text-slate-900 flex items-center space-x-2 text-sm">
+                        <span class="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-700 border border-emerald-200 flex items-center justify-center">
                             <i class="fa-solid fa-wheat-awn text-xs"></i>
                         </span>
                         <span>Vorrats-Ampel & Prognose</span>
                     </h2>
-                    <button onclick="openAddStockModal()" class="text-[10px] bg-emerald-500 text-slate-950 px-2.5 py-1 rounded-xl font-bold hover:bg-emerald-400 transition">+ Vorrat</button>
+                    <button onclick="openAddStockModal()" class="text-[10px] bg-emerald-500 text-white px-2.5 py-1 rounded-xl font-bold hover:bg-emerald-600 transition shadow-sm">+ Vorrat</button>
                 </div>
 
                 <div id="stockItemsContainer" class="space-y-2 text-xs"></div>
             </section>
 
             <!-- Werkstatt-Ecke & Mängelmelder -->
-            <section class="rounded-3xl bg-slate-900/90 border border-slate-800 p-4 shadow-xl backdrop-blur-md space-y-3">
+            <section class="rounded-3xl bg-white/90 border border-emerald-100 p-4 shadow-xl backdrop-blur-md space-y-3">
                 <div class="flex justify-between items-center">
-                    <h2 class="font-bold text-white flex items-center space-x-2 text-sm">
-                        <span class="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-400 border border-amber-500/30 flex items-center justify-center">
+                    <h2 class="font-bold text-slate-900 flex items-center space-x-2 text-sm">
+                        <span class="w-8 h-8 rounded-xl bg-amber-100 text-amber-700 border border-amber-200 flex items-center justify-center">
                             <i class="fa-solid fa-wrench text-xs"></i>
                         </span>
                         <span>Werkstatt & Reparaturen</span>
                     </h2>
-                    <button onclick="openAddIssueModal()" class="text-xs bg-amber-500 text-slate-950 px-3 py-1 rounded-xl font-bold hover:bg-amber-400 transition">+ Melden</button>
+                    <button onclick="openAddIssueModal()" class="text-xs bg-amber-500 text-white px-3 py-1 rounded-xl font-bold hover:bg-amber-600 transition shadow-sm">+ Melden</button>
                 </div>
                 <div id="issuesList" class="space-y-2"></div>
             </section>
 
             <!-- Verlaufskalender -->
-            <section class="rounded-3xl bg-slate-900/90 border border-slate-800 p-4 shadow-xl backdrop-blur-md space-y-3">
+            <section class="rounded-3xl bg-white/90 border border-emerald-100 p-4 shadow-xl backdrop-blur-md space-y-3">
                 <div class="flex items-center justify-between">
-                    <h2 class="font-bold text-white flex items-center space-x-2 text-sm">
-                        <span class="w-8 h-8 rounded-xl bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 flex items-center justify-center">
+                    <h2 class="font-bold text-slate-900 flex items-center space-x-2 text-sm">
+                        <span class="w-8 h-8 rounded-xl bg-indigo-100 text-indigo-700 border border-indigo-200 flex items-center justify-center">
                             <i class="fa-solid fa-calendar-days text-xs"></i>
                         </span>
                         <span>Verlaufskalender</span>
                     </h2>
-                    <div class="flex items-center space-x-1 bg-slate-950 p-1 rounded-2xl border border-slate-800">
-                        <button onclick="changeRoutineMonth(-1)" class="w-7 h-7 rounded-xl bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-xs text-slate-300 transition"><i class="fa-solid fa-chevron-left"></i></button>
-                        <span id="routineMonthDisplay" class="text-xs font-bold text-slate-300 px-2">Oktober 2026</span>
-                        <button onclick="changeRoutineMonth(1)" class="w-7 h-7 rounded-xl bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-xs text-slate-300 transition"><i class="fa-solid fa-chevron-right"></i></button>
+                    <div class="flex items-center space-x-1 bg-emerald-50/60 p-1 rounded-2xl border border-emerald-200">
+                        <button onclick="changeRoutineMonth(-1)" class="w-7 h-7 rounded-xl bg-white hover:bg-emerald-100 flex items-center justify-center text-xs text-slate-700 shadow-sm transition"><i class="fa-solid fa-chevron-left"></i></button>
+                        <span id="routineMonthDisplay" class="text-xs font-bold text-slate-700 px-2">Oktober 2026</span>
+                        <button onclick="changeRoutineMonth(1)" class="w-7 h-7 rounded-xl bg-white hover:bg-emerald-100 flex items-center justify-center text-xs text-slate-700 shadow-sm transition"><i class="fa-solid fa-chevron-right"></i></button>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-7 gap-1 text-center text-[10px] font-bold text-slate-500 pb-1">
+                <div class="grid grid-cols-7 gap-1 text-center text-[10px] font-bold text-slate-400 pb-1">
                     <span>Mo</span><span>Di</span><span>Mi</span><span>Do</span><span>Fr</span><span>Sa</span><span>So</span>
                 </div>
 
@@ -369,13 +369,13 @@
             </section>
 
             <!-- Routine-Aufgaben -->
-            <section class="rounded-3xl bg-slate-900/90 border border-slate-800 p-4 shadow-xl backdrop-blur-md space-y-4">
+            <section class="rounded-3xl bg-white/90 border border-emerald-100 p-4 shadow-xl backdrop-blur-md space-y-4">
                 <div class="flex items-center justify-between">
                     <div>
-                        <h3 class="font-bold text-white text-xs uppercase tracking-wider">Erfasste Routine-Aufgaben</h3>
-                        <p class="text-[10px] text-slate-400 mt-0.5">Klick auf "Heute erledigt" für Schnell-Eintrag</p>
+                        <h3 class="font-bold text-slate-900 text-xs uppercase tracking-wider">Erfasste Routine-Aufgaben</h3>
+                        <p class="text-[10px] text-slate-500 mt-0.5">Klick auf "Heute erledigt" für Schnell-Eintrag</p>
                     </div>
-                    <button onclick="openRoutineModal()" class="text-xs bg-indigo-500 text-slate-950 font-bold px-3 py-1.5 rounded-xl hover:bg-indigo-400 transition flex items-center space-x-1 shadow-md shadow-indigo-500/20">
+                    <button onclick="openRoutineModal()" class="text-xs bg-indigo-500 text-white font-bold px-3 py-1.5 rounded-xl hover:bg-indigo-600 transition flex items-center space-x-1 shadow-md shadow-indigo-500/20">
                         <i class="fa-solid fa-plus text-[10px]"></i>
                         <span>Neu</span>
                     </button>
@@ -388,25 +388,25 @@
     </main>
 
     <!-- Bottom Navigation Bar -->
-    <nav class="fixed bottom-0 left-0 right-0 bg-slate-900/80 backdrop-blur-2xl border-t border-slate-800/80 py-2.5 z-40">
+    <nav class="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-2xl border-t border-emerald-100 py-2.5 z-40 shadow-lg">
         <div class="max-w-md mx-auto flex justify-around items-center">
-            <button onclick="switchMainTab('dashboard')" id="navBtnDashboard" class="flex flex-col items-center space-y-0.5 text-brand-400 font-bold transition">
+            <button onclick="switchMainTab('dashboard')" id="navBtnDashboard" class="flex flex-col items-center space-y-0.5 text-brand-600 font-bold transition">
                 <i class="fa-solid fa-house text-base"></i>
                 <span class="text-[9px]">Dashboard</span>
             </button>
-            <button onclick="switchMainTab('horses')" id="navBtnHorses" class="flex flex-col items-center space-y-0.5 text-slate-500 hover:text-slate-300 transition">
+            <button onclick="switchMainTab('horses')" id="navBtnHorses" class="flex flex-col items-center space-y-0.5 text-slate-400 hover:text-slate-600 transition">
                 <i class="fa-solid fa-horse text-base"></i>
                 <span class="text-[9px]">Pferde</span>
             </button>
-            <button onclick="switchMainTab('shifts')" id="navBtnShifts" class="flex flex-col items-center space-y-0.5 text-slate-500 hover:text-slate-300 transition">
+            <button onclick="switchMainTab('shifts')" id="navBtnShifts" class="flex flex-col items-center space-y-0.5 text-slate-400 hover:text-slate-600 transition">
                 <i class="fa-solid fa-calendar-days text-base"></i>
                 <span class="text-[9px]">Stalldienst</span>
             </button>
-            <button onclick="switchMainTab('checklist')" id="navBtnChecklist" class="flex flex-col items-center space-y-0.5 text-slate-500 hover:text-slate-300 transition">
+            <button onclick="switchMainTab('checklist')" id="navBtnChecklist" class="flex flex-col items-center space-y-0.5 text-slate-400 hover:text-slate-600 transition">
                 <i class="fa-solid fa-list-check text-base"></i>
                 <span class="text-[9px]">Checkliste</span>
             </button>
-            <button onclick="switchMainTab('routine')" id="navBtnRoutine" class="flex flex-col items-center space-y-0.5 text-slate-500 hover:text-slate-300 transition">
+            <button onclick="switchMainTab('routine')" id="navBtnRoutine" class="flex flex-col items-center space-y-0.5 text-slate-400 hover:text-slate-600 transition">
                 <i class="fa-solid fa-calendar-check text-base"></i>
                 <span class="text-[9px]">Verlauf</span>
             </button>
@@ -414,112 +414,112 @@
     </nav>
 
     <!-- MODAL: BADGE INFO (Z-INDEX 70) -->
-    <div id="badgeInfoModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-[70] hidden flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-slate-800 w-full max-w-xs rounded-3xl p-5 space-y-4 shadow-2xl text-center">
+    <div id="badgeInfoModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-md z-[70] hidden flex items-center justify-center p-4">
+        <div class="bg-white border border-emerald-100 w-full max-w-xs rounded-3xl p-5 space-y-4 shadow-2xl text-center">
             <div id="badgeModalIcon" class="text-4xl">🏆</div>
             <div>
-                <h3 id="badgeModalTitle" class="font-extrabold text-base text-white">Badge Name</h3>
-                <p id="badgeModalDesc" class="text-xs text-slate-300 mt-2 leading-relaxed">Erklärung wie man dieses Badge erhält.</p>
+                <h3 id="badgeModalTitle" class="font-extrabold text-base text-slate-900">Badge Name</h3>
+                <p id="badgeModalDesc" class="text-xs text-slate-600 mt-2 leading-relaxed">Erklärung wie man dieses Badge erhält.</p>
             </div>
-            <button onclick="closeBadgeInfoModal()" class="w-full bg-amber-500 text-slate-950 py-2.5 rounded-2xl text-xs font-bold hover:bg-amber-400 transition shadow-md">
+            <button onclick="closeBadgeInfoModal()" class="w-full bg-amber-500 text-white py-2.5 rounded-2xl text-xs font-bold hover:bg-amber-600 transition shadow-md">
                 Verstanden
             </button>
         </div>
     </div>
 
     <!-- MODAL: BESTÄTIGUNG LÖSCHEN (DELETE CONFIRMATION) -->
-    <div id="deleteConfirmModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-[80] hidden flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-slate-800 w-full max-w-xs rounded-3xl p-5 space-y-4 shadow-2xl text-center">
-            <div class="w-12 h-12 rounded-2xl bg-rose-500/20 text-rose-400 border border-rose-500/30 flex items-center justify-center text-xl mx-auto">
+    <div id="deleteConfirmModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-md z-[80] hidden flex items-center justify-center p-4">
+        <div class="bg-white border border-emerald-100 w-full max-w-xs rounded-3xl p-5 space-y-4 shadow-2xl text-center">
+            <div class="w-12 h-12 rounded-2xl bg-rose-100 text-rose-600 border border-rose-200 flex items-center justify-center text-xl mx-auto shadow-sm">
                 <i class="fa-solid fa-trash-can"></i>
             </div>
             <div>
-                <h3 class="font-bold text-base text-white">Notiz löschen?</h3>
-                <p class="text-xs text-slate-400 mt-1">Möchtest du diese Notiz vom Schwarzen Brett wirklich entfernen?</p>
+                <h3 class="font-bold text-base text-slate-900">Notiz löschen?</h3>
+                <p class="text-xs text-slate-500 mt-1">Möchtest du diese Notiz vom Schwarzen Brett wirklich entfernen?</p>
             </div>
             <div class="flex space-x-2 pt-1">
-                <button onclick="closeDeleteConfirmModal()" class="flex-1 bg-slate-800 text-slate-300 py-2.5 rounded-2xl text-xs font-bold">Abbrechen</button>
-                <button onclick="confirmDeleteNote()" class="flex-1 bg-rose-500 text-white py-2.5 rounded-2xl text-xs font-bold hover:bg-rose-400 transition">Löschen</button>
+                <button onclick="closeDeleteConfirmModal()" class="flex-1 bg-slate-100 text-slate-700 py-2.5 rounded-2xl text-xs font-bold hover:bg-slate-200 transition">Abbrechen</button>
+                <button onclick="confirmDeleteNote()" class="flex-1 bg-rose-500 text-white py-2.5 rounded-2xl text-xs font-bold hover:bg-rose-600 transition shadow-sm">Löschen</button>
             </div>
         </div>
     </div>
 
     <!-- MODAL: STALLREGELN -->
-    <div id="rulesModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-slate-800 w-full max-w-md rounded-3xl p-5 max-h-[85vh] overflow-y-auto space-y-4 shadow-2xl">
-            <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+    <div id="rulesModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white border border-emerald-100 w-full max-w-md rounded-3xl p-5 max-h-[85vh] overflow-y-auto space-y-4 shadow-2xl">
+            <div class="flex justify-between items-center border-b border-emerald-100 pb-3">
                 <div class="flex items-center space-x-2.5">
-                    <div class="w-9 h-9 rounded-2xl bg-amber-500/20 text-amber-400 border border-amber-500/30 flex items-center justify-center font-bold">
+                    <div class="w-9 h-9 rounded-2xl bg-amber-100 text-amber-700 border border-amber-200 flex items-center justify-center font-bold">
                         <i class="fa-solid fa-shield-halved text-sm"></i>
                     </div>
                     <div>
-                        <h3 class="font-bold text-base text-white">Stallregeln & Hof-Info</h3>
-                        <p class="text-[10px] text-slate-400">Allgemeine Hofordnung für Einsteller</p>
+                        <h3 class="font-bold text-base text-slate-900">Stallregeln & Hof-Info</h3>
+                        <p class="text-[10px] text-slate-500">Allgemeine Hofordnung für Einsteller</p>
                     </div>
                 </div>
-                <button onclick="closeRulesModal()" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white transition">
+                <button onclick="closeRulesModal()" class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:text-slate-800 transition">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
             
-            <div class="bg-slate-950/60 p-4 rounded-2xl border border-slate-800/80">
-                <pre id="rulesDisplay" class="text-xs text-slate-300 leading-relaxed font-sans whitespace-pre-wrap"></pre>
+            <div class="bg-emerald-50/50 p-4 rounded-2xl border border-emerald-100">
+                <pre id="rulesDisplay" class="text-xs text-slate-700 leading-relaxed font-sans whitespace-pre-wrap"></pre>
             </div>
 
-            <button onclick="closeRulesModal()" class="w-full bg-slate-800 text-slate-300 py-2.5 rounded-2xl text-xs font-bold hover:bg-slate-700 transition">Schließen</button>
+            <button onclick="closeRulesModal()" class="w-full bg-slate-100 text-slate-700 py-2.5 rounded-2xl text-xs font-bold hover:bg-slate-200 transition">Schließen</button>
         </div>
     </div>
 
     <!-- MODAL: WICHTIGE KONTAKTE -->
-    <div id="contactsModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-slate-800 w-full max-w-md rounded-3xl p-5 max-h-[85vh] overflow-y-auto space-y-4 shadow-2xl">
-            <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+    <div id="contactsModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white border border-emerald-100 w-full max-w-md rounded-3xl p-5 max-h-[85vh] overflow-y-auto space-y-4 shadow-2xl">
+            <div class="flex justify-between items-center border-b border-emerald-100 pb-3">
                 <div class="flex items-center space-x-2.5">
-                    <div class="w-9 h-9 rounded-2xl bg-rose-500/20 text-rose-400 border border-rose-500/30 flex items-center justify-center font-bold">
+                    <div class="w-9 h-9 rounded-2xl bg-rose-100 text-rose-600 border border-rose-200 flex items-center justify-center font-bold">
                         <i class="fa-solid fa-phone-flip text-sm"></i>
                     </div>
                     <div>
-                        <h3 class="font-bold text-base text-white">Wichtige Kontakte</h3>
-                        <p class="text-[10px] text-slate-400">Tierärzte, Schmied & Notfall</p>
+                        <h3 class="font-bold text-base text-slate-900">Wichtige Kontakte</h3>
+                        <p class="text-[10px] text-slate-500">Tierärzte, Schmied & Notfall</p>
                     </div>
                 </div>
-                <button onclick="closeContactsModal()" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white transition">
+                <button onclick="closeContactsModal()" class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:text-slate-800 transition">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
 
             <div id="contactsContainer" class="space-y-2"></div>
 
-            <div class="pt-3 border-t border-slate-800 space-y-2">
-                <span class="text-xs font-bold text-slate-300 block">Neuen Kontakt hinzufügen:</span>
-                <input type="text" id="newContactName" placeholder="Name / Funktion (z. B. Dr. Schmied)" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-white">
-                <input type="text" id="newContactPhone" placeholder="Telefonnummer (z. B. +43 664...)" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-white">
-                <input type="text" id="newContactRole" placeholder="Rolle (z. B. Hufschmied / Tierarzt)" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-white">
-                <button onclick="addNewContact()" class="w-full bg-rose-500 text-white font-bold py-2 rounded-xl text-xs hover:bg-rose-400 transition">+ Kontakt Speichern</button>
+            <div class="pt-3 border-t border-emerald-100 space-y-2">
+                <span class="text-xs font-bold text-slate-700 block">Neuen Kontakt hinzufügen:</span>
+                <input type="text" id="newContactName" placeholder="Name / Funktion (z. B. Dr. Schmied)" class="w-full bg-slate-50 border border-emerald-200 rounded-xl px-3 py-2 text-xs text-slate-800">
+                <input type="text" id="newContactPhone" placeholder="Telefonnummer (z. B. +43 664...)" class="w-full bg-slate-50 border border-emerald-200 rounded-xl px-3 py-2 text-xs text-slate-800">
+                <input type="text" id="newContactRole" placeholder="Rolle (z. B. Hufschmied / Tierarzt)" class="w-full bg-slate-50 border border-emerald-200 rounded-xl px-3 py-2 text-xs text-slate-800">
+                <button onclick="addNewContact()" class="w-full bg-rose-500 text-white font-bold py-2 rounded-xl text-xs hover:bg-rose-600 transition shadow-sm">+ Kontakt Speichern</button>
             </div>
         </div>
     </div>
 
     <!-- MODAL: PFERD GESAMT-KALENDER & HISTORIE -->
-    <div id="horseCalendarModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-[65] hidden flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-slate-800 w-full max-w-md rounded-3xl p-5 max-h-[85vh] overflow-y-auto space-y-4 shadow-2xl">
-            <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+    <div id="horseCalendarModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-md z-[65] hidden flex items-center justify-center p-4">
+        <div class="bg-white border border-emerald-100 w-full max-w-md rounded-3xl p-5 max-h-[85vh] overflow-y-auto space-y-4 shadow-2xl">
+            <div class="flex justify-between items-center border-b border-emerald-100 pb-3">
                 <div>
-                    <h3 id="calendarModalHorseName" class="font-bold text-base text-white">Pferde-Gesamtkalender</h3>
-                    <p class="text-[10px] text-slate-400">Klick auf einen Tag für Koppelzeit, Notizen & Aktivitäten</p>
+                    <h3 id="calendarModalHorseName" class="font-bold text-base text-slate-900">Pferde-Gesamtkalender</h3>
+                    <p class="text-[10px] text-slate-500">Klick auf einen Tag für Koppelzeit, Notizen & Aktivitäten</p>
                 </div>
-                <button onclick="closeHorseCalendarModal()" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white transition">
+                <button onclick="closeHorseCalendarModal()" class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:text-slate-800 transition">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
 
-            <div class="flex justify-between items-center bg-slate-950 p-2 rounded-xl border border-slate-800">
-                <button onclick="changeHorseCalendarMonth(-1)" class="w-7 h-7 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center text-xs"><i class="fa-solid fa-chevron-left"></i></button>
-                <span id="horseCalendarMonthDisplay" class="text-xs font-bold text-slate-200">Oktober 2026</span>
-                <button onclick="changeHorseCalendarMonth(1)" class="w-7 h-7 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center text-xs"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="flex justify-between items-center bg-emerald-50/60 p-2 rounded-xl border border-emerald-200">
+                <button onclick="changeHorseCalendarMonth(-1)" class="w-7 h-7 rounded-lg bg-white hover:bg-emerald-100 text-slate-700 flex items-center justify-center text-xs shadow-sm"><i class="fa-solid fa-chevron-left"></i></button>
+                <span id="horseCalendarMonthDisplay" class="text-xs font-bold text-slate-800">Oktober 2026</span>
+                <button onclick="changeHorseCalendarMonth(1)" class="w-7 h-7 rounded-lg bg-white hover:bg-emerald-100 text-slate-700 flex items-center justify-center text-xs shadow-sm"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
 
-            <div class="grid grid-cols-7 gap-1 text-center text-[10px] font-bold text-slate-500">
+            <div class="grid grid-cols-7 gap-1 text-center text-[10px] font-bold text-slate-400">
                 <span>Mo</span><span>Di</span><span>Mi</span><span>Do</span><span>Fr</span><span>Sa</span><span>So</span>
             </div>
 
@@ -528,71 +528,71 @@
     </div>
 
     <!-- MODAL: EINZELNER TAG IM PFERDEKALENDER BEARBEITEN -->
-    <div id="horseCalendarDayModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-[75] hidden flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-slate-800 w-full max-w-sm rounded-3xl p-5 max-h-[85vh] overflow-y-auto space-y-4 shadow-2xl">
-            <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+    <div id="horseCalendarDayModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-md z-[75] hidden flex items-center justify-center p-4">
+        <div class="bg-white border border-emerald-100 w-full max-w-sm rounded-3xl p-5 max-h-[85vh] overflow-y-auto space-y-4 shadow-2xl">
+            <div class="flex justify-between items-center border-b border-emerald-100 pb-2">
                 <div>
-                    <h3 id="horseCalendarDayTitle" class="font-bold text-sm text-white">Datum</h3>
-                    <p class="text-[10px] text-slate-400">Tagesdetails & Aktivitäten anpassen</p>
+                    <h3 id="horseCalendarDayTitle" class="font-bold text-sm text-slate-900">Datum</h3>
+                    <p class="text-[10px] text-slate-500">Tagesdetails & Aktivitäten anpassen</p>
                 </div>
-                <button onclick="closeHorseCalendarDayModal()" class="w-7 h-7 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white">
+                <button onclick="closeHorseCalendarDayModal()" class="w-7 h-7 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:text-slate-800">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
 
             <!-- Koppelzeit für diesen Tag anpassen -->
-            <div class="bg-slate-950/60 p-3 rounded-2xl border border-slate-800 space-y-1.5 text-xs">
-                <label class="font-bold text-amber-400 flex items-center space-x-1">
+            <div class="bg-emerald-50/50 p-3 rounded-2xl border border-emerald-100 space-y-1.5 text-xs">
+                <label class="font-bold text-amber-700 flex items-center space-x-1">
                     <i class="fa-solid fa-clock"></i>
                     <span>Koppelzeit (Stunden)</span>
                 </label>
-                <input type="number" step="0.5" id="dayModalKoppelHours" onchange="saveDayKoppelHours()" placeholder="z. B. 6.5" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-white font-bold">
+                <input type="number" step="0.5" id="dayModalKoppelHours" onchange="saveDayKoppelHours()" placeholder="z. B. 6.5" class="w-full bg-white border border-emerald-200 rounded-xl px-3 py-2 text-slate-800 font-bold">
             </div>
 
             <!-- Notizen & Besonderheiten für diesen Tag -->
-            <div class="bg-slate-950/60 p-3 rounded-2xl border border-slate-800 space-y-2 text-xs">
-                <label class="font-bold text-indigo-400 flex items-center space-x-1">
+            <div class="bg-emerald-50/50 p-3 rounded-2xl border border-emerald-100 space-y-2 text-xs">
+                <label class="font-bold text-indigo-700 flex items-center space-x-1">
                     <i class="fa-solid fa-note-sticky"></i>
                     <span>Notizen & Besonderheiten für diesen Tag</span>
                 </label>
                 <div class="flex space-x-2">
-                    <input type="text" id="dayModalNoteInput" placeholder="z. B. Leicht gelahmt, Hufschmied..." class="flex-1 bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-white">
-                    <button onclick="addDayNote()" class="bg-indigo-500 text-slate-950 font-bold px-3 py-2 rounded-xl">+</button>
+                    <input type="text" id="dayModalNoteInput" placeholder="z. B. Leicht gelahmt, Hufschmied..." class="flex-1 bg-white border border-emerald-200 rounded-xl px-3 py-2 text-slate-800">
+                    <button onclick="addDayNote()" class="bg-indigo-500 text-white font-bold px-3 py-2 rounded-xl shadow-sm">+</button>
                 </div>
                 <div id="dayModalNotesList" class="space-y-1 max-h-24 overflow-y-auto pt-1"></div>
             </div>
 
             <!-- Aktivitäten für diesen Tag -->
             <div class="space-y-2">
-                <span class="text-xs font-bold text-slate-300 block">Aktivitäten / Training:</span>
+                <span class="text-xs font-bold text-slate-700 block">Aktivitäten / Training:</span>
                 <div id="horseCalendarDayActivitiesList" class="space-y-2"></div>
             </div>
 
-            <button onclick="closeHorseCalendarDayModal()" class="w-full bg-brand-500 text-slate-950 py-2.5 rounded-2xl text-xs font-bold hover:bg-brand-400 transition">Fertig</button>
+            <button onclick="closeHorseCalendarDayModal()" class="w-full bg-brand-500 text-white py-2.5 rounded-2xl text-xs font-bold hover:bg-brand-600 transition shadow-md shadow-brand-500/20">Fertig</button>
         </div>
     </div>
 
     <!-- MODAL: PFERD DETAIL -->
-    <div id="horseModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 hidden flex items-end sm:items-center justify-center p-0 sm:p-4">
-        <div class="bg-slate-900 border border-slate-800 w-full max-w-lg rounded-t-3xl sm:rounded-3xl p-5 max-h-[90vh] overflow-y-auto space-y-4 shadow-2xl">
-            <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+    <div id="horseModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-md z-50 hidden flex items-end sm:items-center justify-center p-0 sm:p-4">
+        <div class="bg-white border border-emerald-100 w-full max-w-lg rounded-t-3xl sm:rounded-3xl p-5 max-h-[90vh] overflow-y-auto space-y-4 shadow-2xl">
+            <div class="flex justify-between items-center border-b border-emerald-100 pb-3">
                 <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 rounded-2xl bg-brand-500/20 border border-brand-500/40 text-brand-400 flex items-center justify-center font-bold">
+                    <div class="w-10 h-10 rounded-2xl bg-emerald-100 border border-emerald-200 text-emerald-700 flex items-center justify-center font-bold">
                         <i class="fa-solid fa-horse text-lg"></i>
                     </div>
                     <div>
-                        <h3 id="modalHorseName" class="font-bold text-lg text-white">Pferdename</h3>
-                        <p class="text-[11px] text-brand-400 font-medium">Lieblings-Gefährte ❤️</p>
+                        <h3 id="modalHorseName" class="font-bold text-lg text-slate-900">Pferdename</h3>
+                        <p class="text-[11px] text-emerald-700 font-medium">Lieblings-Gefährte ❤️</p>
                     </div>
                 </div>
-                <button onclick="closeHorseModal()" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white transition">
+                <button onclick="closeHorseModal()" class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:text-slate-800 transition">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
 
             <!-- BADGES DES PFERDES -->
-            <div class="bg-slate-950/60 p-3 rounded-2xl border border-slate-800 space-y-2">
-                <h4 class="text-[11px] font-bold text-amber-400 uppercase tracking-wider flex items-center space-x-1">
+            <div class="bg-emerald-50/50 p-3 rounded-2xl border border-emerald-100 space-y-2">
+                <h4 class="text-[11px] font-bold text-amber-700 uppercase tracking-wider flex items-center space-x-1">
                     <i class="fa-solid fa-award"></i>
                     <span>Freigeschaltete Badges (Klick für Info)</span>
                 </h4>
@@ -600,135 +600,135 @@
             </div>
 
             <!-- STANDORT ANPASSEN & TRACKING -->
-            <div class="bg-slate-950/60 p-3 rounded-2xl border border-slate-800 space-y-3">
+            <div class="bg-emerald-50/50 p-3 rounded-2xl border border-emerald-100 space-y-3">
                 <div class="flex justify-between items-center">
-                    <label class="text-[11px] font-bold text-slate-400 uppercase tracking-wider flex items-center space-x-1">
-                        <i class="fa-solid fa-location-dot text-amber-400"></i>
+                    <label class="text-[11px] font-bold text-slate-500 uppercase tracking-wider flex items-center space-x-1">
+                        <i class="fa-solid fa-location-dot text-amber-600"></i>
                         <span>Standort & Tracking</span>
                     </label>
-                    <span id="modalLocationDurationBadge" class="text-[10px] font-bold text-amber-300 bg-amber-500/20 border border-amber-500/30 px-2.5 py-0.5 rounded-full">
+                    <span id="modalLocationDurationBadge" class="text-[10px] font-bold text-amber-800 bg-amber-100 border border-amber-200 px-2.5 py-0.5 rounded-full">
                         Seit 0 Std.
                     </span>
                 </div>
 
                 <div class="grid grid-cols-2 gap-2">
-                    <button onclick="setHorseLocation('Koppel')" id="btnLocKoppel" class="py-2.5 px-3 rounded-xl text-xs font-bold border transition flex items-center justify-center space-x-1.5">
-                        <i class="fa-solid fa-sun text-amber-400"></i><span>Auf Koppel</span>
+                    <button onclick="setHorseLocation('Koppel')" id="btnLocKoppel" class="py-2.5 px-3 rounded-xl text-xs font-bold border transition flex items-center justify-center space-x-1.5 shadow-sm">
+                        <i class="fa-solid fa-sun text-amber-500"></i><span>Auf Koppel</span>
                     </button>
-                    <button onclick="setHorseLocation('Offenstall')" id="btnLocOffenstall" class="py-2.5 px-3 rounded-xl text-xs font-bold border transition flex items-center justify-center space-x-1.5">
-                        <i class="fa-solid fa-house-chimney text-amber-600"></i><span>Im Offenstall</span>
+                    <button onclick="setHorseLocation('Offenstall')" id="btnLocOffenstall" class="py-2.5 px-3 rounded-xl text-xs font-bold border transition flex items-center justify-center space-x-1.5 shadow-sm">
+                        <i class="fa-solid fa-house-chimney text-amber-700"></i><span>Im Offenstall</span>
                     </button>
                 </div>
 
                 <!-- VERGLEICH / STATISTIK -->
-                <div class="bg-slate-900/90 rounded-xl p-3 border border-slate-800/80 space-y-2 text-xs">
-                    <div class="flex justify-between items-center text-slate-300 font-semibold border-b border-slate-800 pb-1.5 text-[11px]">
+                <div class="bg-white rounded-xl p-3 border border-emerald-100 space-y-2 text-xs shadow-sm">
+                    <div class="flex justify-between items-center text-slate-700 font-semibold border-b border-slate-100 pb-1.5 text-[11px]">
                         <span>⏱️ Koppelzeit-Vergleich</span>
                     </div>
                     <div class="grid grid-cols-3 gap-2 text-center pt-1">
-                        <div class="bg-slate-950 p-2 rounded-lg border border-slate-800/60">
-                            <span class="text-[9px] text-slate-400 block font-bold">Heute</span>
-                            <span id="statKoppelToday" class="font-extrabold text-amber-400">0.0 Std.</span>
+                        <div class="bg-emerald-50/40 p-2 rounded-lg border border-emerald-100">
+                            <span class="text-[9px] text-slate-500 block font-bold">Heute</span>
+                            <span id="statKoppelToday" class="font-extrabold text-amber-700">0.0 Std.</span>
                         </div>
-                        <div class="bg-slate-950 p-2 rounded-lg border border-slate-800/60">
-                            <span class="text-[9px] text-slate-400 block font-bold">Gestern</span>
-                            <span id="statKoppelYesterday" class="font-extrabold text-slate-300">0.0 Std.</span>
+                        <div class="bg-emerald-50/40 p-2 rounded-lg border border-emerald-100">
+                            <span class="text-[9px] text-slate-500 block font-bold">Gestern</span>
+                            <span id="statKoppelYesterday" class="font-extrabold text-slate-700">0.0 Std.</span>
                         </div>
-                        <div class="bg-slate-950 p-2 rounded-lg border border-slate-800/60">
-                            <span class="text-[9px] text-slate-400 block font-bold">7-Tage Schnitt</span>
-                            <span id="statKoppelAvg" class="font-extrabold text-emerald-400">0.0 Std/D</span>
+                        <div class="bg-emerald-50/40 p-2 rounded-lg border border-emerald-100">
+                            <span class="text-[9px] text-slate-500 block font-bold">7-Tage Schnitt</span>
+                            <span id="statKoppelAvg" class="font-extrabold text-emerald-700">0.0 Std/D</span>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- FUTTER- & MEDIKAMENTENPLAN (EINKLAPPBAR) -->
-            <div class="bg-slate-950/60 rounded-2xl border border-slate-800 overflow-hidden">
-                <button onclick="toggleFeedPlanAccordion()" class="w-full p-3 flex justify-between items-center text-left hover:bg-slate-900/50 transition">
-                    <h4 class="text-[11px] font-bold text-amber-400 uppercase tracking-wider flex items-center space-x-2">
+            <div class="bg-emerald-50/50 rounded-2xl border border-emerald-100 overflow-hidden">
+                <button onclick="toggleFeedPlanAccordion()" class="w-full p-3 flex justify-between items-center text-left hover:bg-emerald-100/50 transition">
+                    <h4 class="text-[11px] font-bold text-amber-700 uppercase tracking-wider flex items-center space-x-2">
                         <i class="fa-solid fa-bowl-food"></i>
                         <span>Futter- & Medikamentenplan</span>
                     </h4>
                     <i id="feedAccordionIcon" class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-300"></i>
                 </button>
                 
-                <div id="feedPlanContent" class="hidden p-3 pt-0 border-t border-slate-800/60 space-y-3 mt-2">
+                <div id="feedPlanContent" class="hidden p-3 pt-0 border-t border-emerald-100 space-y-3 mt-2">
                     <div class="space-y-2 text-xs">
-                        <div class="bg-slate-900 p-2.5 rounded-xl border border-slate-800 space-y-1">
-                            <span class="text-[10px] text-amber-400 font-bold flex items-center space-x-1">
+                        <div class="bg-white p-2.5 rounded-xl border border-emerald-100 space-y-1 shadow-sm">
+                            <span class="text-[10px] text-amber-700 font-bold flex items-center space-x-1">
                                 <i class="fa-solid fa-sun text-[9px]"></i>
                                 <span>Morgens:</span>
                             </span>
-                            <input type="text" id="horseFeedMorgens" onchange="saveHorsePlanDetails()" placeholder="Z. B. 1 Becher Müsli + Mineral" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1.5 text-slate-200 text-xs focus:ring-0">
+                            <input type="text" id="horseFeedMorgens" onchange="saveHorsePlanDetails()" placeholder="Z. B. 1 Becher Müsli + Mineral" class="w-full bg-slate-50 border border-emerald-200 rounded-lg px-2.5 py-1.5 text-slate-800 text-xs focus:ring-0">
                         </div>
 
-                        <div class="bg-slate-900 p-2.5 rounded-xl border border-slate-800 space-y-1">
-                            <span class="text-[10px] text-amber-500 font-bold flex items-center space-x-1">
+                        <div class="bg-white p-2.5 rounded-xl border border-emerald-100 space-y-1 shadow-sm">
+                            <span class="text-[10px] text-amber-800 font-bold flex items-center space-x-1">
                                 <i class="fa-solid fa-cloud-sun text-[9px]"></i>
                                 <span>Mittags:</span>
                             </span>
-                            <input type="text" id="horseFeedMittags" onchange="saveHorsePlanDetails()" placeholder="Z. B. Heunetz im Paddock" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1.5 text-slate-200 text-xs focus:ring-0">
+                            <input type="text" id="horseFeedMittags" onchange="saveHorsePlanDetails()" placeholder="Z. B. Heunetz im Paddock" class="w-full bg-slate-50 border border-emerald-200 rounded-lg px-2.5 py-1.5 text-slate-800 text-xs focus:ring-0">
                         </div>
 
-                        <div class="bg-slate-900 p-2.5 rounded-xl border border-slate-800 space-y-1">
-                            <span class="text-[10px] text-indigo-400 font-bold flex items-center space-x-1">
+                        <div class="bg-white p-2.5 rounded-xl border border-emerald-100 space-y-1 shadow-sm">
+                            <span class="text-[10px] text-indigo-700 font-bold flex items-center space-x-1">
                                 <i class="fa-solid fa-moon text-[9px]"></i>
                                 <span>Abends:</span>
                             </span>
-                            <input type="text" id="horseFeedAbends" onchange="saveHorsePlanDetails()" placeholder="Z. B. 1/2 Becher Haferfrei" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1.5 text-slate-200 text-xs focus:ring-0">
+                            <input type="text" id="horseFeedAbends" onchange="saveHorsePlanDetails()" placeholder="Z. B. 1/2 Becher Haferfrei" class="w-full bg-slate-50 border border-emerald-200 rounded-lg px-2.5 py-1.5 text-slate-800 text-xs focus:ring-0">
                         </div>
 
-                        <div class="bg-slate-900 p-2.5 rounded-xl border border-rose-500/30 space-y-1">
-                            <span class="text-[10px] text-rose-400 font-bold flex items-center space-x-1">
+                        <div class="bg-white p-2.5 rounded-xl border border-rose-200 space-y-1 shadow-sm">
+                            <span class="text-[10px] text-rose-600 font-bold flex items-center space-x-1">
                                 <i class="fa-solid fa-pills text-[9px]"></i>
                                 <span>Medikamente & Zusätze:</span>
                             </span>
-                            <input type="text" id="horseMedInput" onchange="saveHorsePlanDetails()" placeholder="Z. B. 1x Schmerzmittel im Apfel (abends)" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1.5 text-rose-300 text-xs focus:ring-0">
+                            <input type="text" id="horseMedInput" onchange="saveHorsePlanDetails()" placeholder="Z. B. 1x Schmerzmittel im Apfel (abends)" class="w-full bg-slate-50 border border-rose-200 rounded-lg px-2.5 py-1.5 text-rose-800 text-xs focus:ring-0">
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- AUSGELAGERTER KALENDER / HISTORIE BUTTON -->
-            <button onclick="openHorseCalendarModal()" class="w-full bg-gradient-to-r from-emerald-600 to-brand-600 text-slate-950 font-extrabold py-3 rounded-2xl text-xs hover:brightness-110 transition shadow-lg shadow-brand-500/20 flex items-center justify-center space-x-2">
+            <button onclick="openHorseCalendarModal()" class="w-full bg-gradient-to-r from-emerald-600 to-brand-600 text-white font-extrabold py-3 rounded-2xl text-xs hover:brightness-110 transition shadow-lg shadow-brand-500/25 flex items-center justify-center space-x-2">
                 <i class="fa-solid fa-calendar-days text-sm"></i>
                 <span>📅 Pferde-Gesamtkalender & Historie anzeigen</span>
             </button>
 
             <!-- HEUTIGES TRAINING & AKTIVITÄT -->
-            <div class="bg-slate-950/60 p-3 rounded-2xl border border-slate-800 space-y-3">
+            <div class="bg-emerald-50/50 p-3 rounded-2xl border border-emerald-100 space-y-3">
                 <div class="flex justify-between items-center">
-                    <h4 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider flex items-center space-x-1">
-                        <i class="fa-solid fa-heart-pulse text-rose-400"></i>
+                    <h4 class="text-[11px] font-bold text-slate-500 uppercase tracking-wider flex items-center space-x-1">
+                        <i class="fa-solid fa-heart-pulse text-rose-600"></i>
                         <span>Heutiges Training / Aktivität</span>
                     </h4>
                 </div>
                 <div id="modalActivitiesList" class="grid grid-cols-2 gap-2"></div>
                 
                 <!-- EIGENE AKTIVITÄT HINZUFÜGEN -->
-                <div class="pt-2 border-t border-slate-800/80 space-y-1.5">
-                    <label class="text-[10px] text-slate-400 font-bold block">Eigene Aktivität hinzufügen:</label>
+                <div class="pt-2 border-t border-emerald-100 space-y-1.5">
+                    <label class="text-[10px] text-slate-500 font-bold block">Eigene Aktivität hinzufügen:</label>
                     <div class="flex space-x-2">
-                        <input type="text" id="customActivityInput" placeholder="z. B. Freispringen, Massage..." class="flex-1 bg-slate-900 border border-slate-800 rounded-xl px-3 py-1.5 text-xs text-white">
-                        <button onclick="addCustomHorseActivity()" class="bg-brand-500 text-slate-950 font-bold px-3 py-1.5 rounded-xl text-xs hover:bg-brand-400 transition">+</button>
+                        <input type="text" id="customActivityInput" placeholder="z. B. Freispringen, Massage..." class="flex-1 bg-white border border-emerald-200 rounded-xl px-3 py-1.5 text-xs text-slate-800">
+                        <button onclick="addCustomHorseActivity()" class="bg-brand-500 text-white font-bold px-3 py-1.5 rounded-xl text-xs hover:bg-brand-600 transition shadow-sm">+</button>
                     </div>
                 </div>
             </div>
 
             <!-- NOTIZEN -->
-            <div class="space-y-2.5 bg-slate-950/60 p-3 rounded-2xl border border-slate-800">
-                <h4 class="text-[11px] font-bold text-slate-400 uppercase tracking-wider flex items-center space-x-1">
-                    <i class="fa-solid fa-clipboard text-indigo-400"></i>
+            <div class="space-y-2.5 bg-emerald-50/50 p-3 rounded-2xl border border-emerald-100">
+                <h4 class="text-[11px] font-bold text-slate-500 uppercase tracking-wider flex items-center space-x-1">
+                    <i class="fa-solid fa-clipboard text-indigo-600"></i>
                     <span>Notizen & Besonderheiten</span>
                 </h4>
                 <div class="space-y-2">
-                    <input type="text" id="newHorseNoteInput" placeholder="Z. B. Tierarzt da gewesen..." class="w-full bg-slate-900 border border-slate-800 rounded-xl px-3 py-2 text-xs text-white">
+                    <input type="text" id="newHorseNoteInput" placeholder="Z. B. Tierarzt da gewesen..." class="w-full bg-white border border-emerald-200 rounded-xl px-3 py-2 text-xs text-slate-800">
                     <div class="flex items-center justify-between pt-1">
-                        <label class="flex items-center space-x-2 text-[11px] text-slate-300 cursor-pointer select-none">
-                            <input type="checkbox" id="newHorseNoteIsDaily" class="rounded border-slate-700 text-indigo-500 focus:ring-0 w-4 h-4">
+                        <label class="flex items-center space-x-2 text-[11px] text-slate-700 cursor-pointer select-none">
+                            <input type="checkbox" id="newHorseNoteIsDaily" class="rounded border-emerald-300 text-indigo-600 focus:ring-0 w-4 h-4">
                             <span>Als Tageseintrag im Kalender speichern</span>
                         </label>
-                        <button onclick="addHorseNote()" class="bg-brand-500 text-slate-950 px-3.5 py-2 rounded-xl text-xs font-bold hover:bg-brand-400 transition">Hinzufügen</button>
+                        <button onclick="addHorseNote()" class="bg-brand-500 text-white px-3.5 py-2 rounded-xl text-xs font-bold hover:bg-brand-600 transition shadow-sm">Hinzufügen</button>
                     </div>
                 </div>
                 <div id="modalHorseNotesList" class="space-y-1.5 max-h-36 overflow-y-auto pt-1"></div>
@@ -737,59 +737,59 @@
     </div>
 
     <!-- MODAL: NEUER VORRAT -->
-    <div id="addStockModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-slate-800 w-full max-w-sm rounded-3xl p-5 space-y-4 shadow-2xl">
-            <h3 class="font-bold text-base text-white">Neuen Vorrat anlegen</h3>
+    <div id="addStockModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white border border-emerald-100 w-full max-w-sm rounded-3xl p-5 space-y-4 shadow-2xl">
+            <h3 class="font-bold text-base text-slate-900">Neuen Vorrat anlegen</h3>
             <div class="space-y-3 text-xs">
                 <div>
-                    <label class="text-[11px] font-bold text-slate-400 block mb-1">Bezeichnung</label>
-                    <input type="text" id="newStockName" placeholder="Z. B. Ziegenfutter (Sack), Heuballen..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-white">
+                    <label class="text-[11px] font-bold text-slate-500 block mb-1">Bezeichnung</label>
+                    <input type="text" id="newStockName" placeholder="Z. B. Ziegenfutter (Sack), Heuballen..." class="w-full bg-slate-50 border border-emerald-200 rounded-xl px-3 py-2 text-slate-800">
                 </div>
                 <div class="grid grid-cols-2 gap-2">
                     <div>
-                        <label class="text-[11px] font-bold text-slate-400 block mb-1">Aktueller Bestand</label>
-                        <input type="number" id="newStockCount" value="1" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-white">
+                        <label class="text-[11px] font-bold text-slate-500 block mb-1">Aktueller Bestand</label>
+                        <input type="number" id="newStockCount" value="1" class="w-full bg-slate-50 border border-emerald-200 rounded-xl px-3 py-2 text-slate-800">
                     </div>
                     <div>
-                        <label class="text-[11px] font-bold text-slate-400 block mb-1">Einheit</label>
-                        <input type="text" id="newStockUnit" placeholder="Sack, Ballen, Stk." value="Sack" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-white">
+                        <label class="text-[11px] font-bold text-slate-500 block mb-1">Einheit</label>
+                        <input type="text" id="newStockUnit" placeholder="Sack, Ballen, Stk." value="Sack" class="w-full bg-slate-50 border border-emerald-200 rounded-xl px-3 py-2 text-slate-800">
                     </div>
                 </div>
             </div>
             <div class="flex space-x-2 pt-2">
-                <button onclick="closeAddStockModal()" class="flex-1 bg-slate-800 text-slate-300 py-2.5 rounded-2xl text-xs font-bold">Abbrechen</button>
-                <button onclick="saveNewStockItem()" class="flex-1 bg-emerald-500 text-slate-950 py-2.5 rounded-2xl text-xs font-bold">Anlegen</button>
+                <button onclick="closeAddStockModal()" class="flex-1 bg-slate-100 text-slate-700 py-2.5 rounded-2xl text-xs font-bold hover:bg-slate-200 transition">Abbrechen</button>
+                <button onclick="saveNewStockItem()" class="flex-1 bg-emerald-500 text-white py-2.5 rounded-2xl text-xs font-bold hover:bg-emerald-600 transition shadow-sm">Anlegen</button>
             </div>
         </div>
     </div>
 
     <!-- MODAL: KOPPEL HINZUFÜGEN -->
-    <div id="addPaddockModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-slate-800 w-full max-w-sm rounded-3xl p-5 space-y-4 shadow-2xl">
-            <h3 class="font-bold text-base text-white">Neue Koppel anlegen</h3>
+    <div id="addPaddockModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white border border-emerald-100 w-full max-w-sm rounded-3xl p-5 space-y-4 shadow-2xl">
+            <h3 class="font-bold text-base text-slate-900">Neue Koppel anlegen</h3>
             <div>
-                <label class="text-[11px] font-bold text-slate-400 block mb-1">Koppel-Bezeichnung</label>
-                <input type="text" id="newPaddockName" placeholder="Z. B. Koppel C, Sommerweide..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-white">
+                <label class="text-[11px] font-bold text-slate-500 block mb-1">Koppel-Bezeichnung</label>
+                <input type="text" id="newPaddockName" placeholder="Z. B. Koppel C, Sommerweide..." class="w-full bg-slate-50 border border-emerald-200 rounded-xl px-3 py-2 text-xs text-slate-800">
             </div>
             <div class="flex space-x-2 pt-2">
-                <button onclick="closeAddPaddockModal()" class="flex-1 bg-slate-800 text-slate-300 py-2.5 rounded-2xl text-xs font-bold">Abbrechen</button>
-                <button onclick="saveNewPaddock()" class="flex-1 bg-emerald-500 text-slate-950 py-2.5 rounded-2xl text-xs font-bold">Anlegen</button>
+                <button onclick="closeAddPaddockModal()" class="flex-1 bg-slate-100 text-slate-700 py-2.5 rounded-2xl text-xs font-bold hover:bg-slate-200 transition">Abbrechen</button>
+                <button onclick="saveNewPaddock()" class="flex-1 bg-emerald-500 text-white py-2.5 rounded-2xl text-xs font-bold hover:bg-emerald-600 transition shadow-sm">Anlegen</button>
             </div>
         </div>
     </div>
 
     <!-- MODAL: KOPPEL BEARBEITEN -->
-    <div id="editPaddockModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-slate-800 w-full max-w-sm rounded-3xl p-5 space-y-4 shadow-2xl">
-            <div class="flex justify-between items-center border-b border-slate-800 pb-2">
-                <h3 id="editPaddockModalTitle" class="font-bold text-base text-white">Koppel bearbeiten</h3>
-                <button onclick="promptDeleteActivePaddock()" class="text-slate-500 hover:text-rose-400 text-xs p-1"><i class="fa-solid fa-trash"></i></button>
+    <div id="editPaddockModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white border border-emerald-100 w-full max-w-sm rounded-3xl p-5 space-y-4 shadow-2xl">
+            <div class="flex justify-between items-center border-b border-emerald-100 pb-2">
+                <h3 id="editPaddockModalTitle" class="font-bold text-base text-slate-900">Koppel bearbeiten</h3>
+                <button onclick="promptDeleteActivePaddock()" class="text-slate-400 hover:text-rose-600 text-xs p-1"><i class="fa-solid fa-trash"></i></button>
             </div>
             
             <div class="space-y-3 text-xs">
                 <div>
-                    <label class="text-[11px] font-bold text-slate-400 block mb-1">Status wählen</label>
-                    <select id="editPaddockStatus" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-white font-bold">
+                    <label class="text-[11px] font-bold text-slate-500 block mb-1">Status wählen</label>
+                    <select id="editPaddockStatus" class="w-full bg-slate-50 border border-emerald-200 rounded-xl px-3 py-2 text-slate-800 font-bold">
                         <option value="Aktiv">Aktiv / Offen ✅</option>
                         <option value="Ruhepause">Ruhepause / Schonung 💤</option>
                         <option value="Geschlossen">Geschlossen 🚫</option>
@@ -797,100 +797,100 @@
                 </div>
 
                 <div>
-                    <label class="text-[11px] font-bold text-slate-400 block mb-1">Schonung bis / Info-Text</label>
-                    <input type="text" id="editPaddockInfo" placeholder="Z. B. Offen seit 8 Tagen oder Schonung bis 01. Nov" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-white">
+                    <label class="text-[11px] font-bold text-slate-500 block mb-1">Schonung bis / Info-Text</label>
+                    <input type="text" id="editPaddockInfo" placeholder="Z. B. Offen seit 8 Tagen oder Schonung bis 01. Nov" class="w-full bg-slate-50 border border-emerald-200 rounded-xl px-3 py-2 text-slate-800">
                 </div>
 
-                <div class="p-2.5 bg-slate-950/60 rounded-xl border border-slate-800 flex items-center justify-between">
+                <div class="p-2.5 bg-emerald-50/50 rounded-xl border border-emerald-100 flex items-center justify-between">
                     <div>
-                        <span class="text-xs font-bold text-slate-200 block">Im Verlaufskalender loggen</span>
+                        <span class="text-xs font-bold text-slate-800 block">Im Verlaufskalender loggen</span>
                         <span class="text-[9px] text-slate-500 block">Speichert diese Änderung für heute ab</span>
                     </div>
-                    <input type="checkbox" id="editPaddockLogHistory" checked class="rounded border-slate-700 text-emerald-500 focus:ring-0 w-4 h-4">
+                    <input type="checkbox" id="editPaddockLogHistory" checked class="rounded border-emerald-300 text-emerald-600 focus:ring-0 w-4 h-4">
                 </div>
             </div>
 
             <div class="flex space-x-2 pt-2">
-                <button onclick="closeEditPaddockModal()" class="flex-1 bg-slate-800 text-slate-300 py-2.5 rounded-2xl text-xs font-bold">Abbrechen</button>
-                <button onclick="savePaddockChanges()" class="flex-1 bg-emerald-500 text-slate-950 py-2.5 rounded-2xl text-xs font-bold">Speichern</button>
+                <button onclick="closeEditPaddockModal()" class="flex-1 bg-slate-100 text-slate-700 py-2.5 rounded-2xl text-xs font-bold hover:bg-slate-200 transition">Abbrechen</button>
+                <button onclick="savePaddockChanges()" class="flex-1 bg-emerald-500 text-white py-2.5 rounded-2xl text-xs font-bold hover:bg-emerald-600 transition shadow-sm">Speichern</button>
             </div>
         </div>
     </div>
 
     <!-- MODAL: MANGEL MELDEN -->
-    <div id="issueModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-slate-800 w-full max-w-sm rounded-3xl p-5 space-y-4 shadow-2xl">
-            <h3 class="font-bold text-base text-white">Mangel / Reparatur melden</h3>
+    <div id="issueModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white border border-emerald-100 w-full max-w-sm rounded-3xl p-5 space-y-4 shadow-2xl">
+            <h3 class="font-bold text-base text-slate-900">Mangel / Reparatur melden</h3>
             <div class="space-y-3 text-xs">
-                <input type="text" id="issueTitle" placeholder="Z. B. Zaunband Koppel B nachspannen" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-white">
-                <select id="issuePriority" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-white">
+                <input type="text" id="issueTitle" placeholder="Z. B. Zaunband Koppel B nachspannen" class="w-full bg-slate-50 border border-emerald-200 rounded-xl px-3 py-2 text-slate-800">
+                <select id="issuePriority" class="w-full bg-slate-50 border border-emerald-200 rounded-xl px-3 py-2 text-slate-800">
                     <option value="Dringend">Dringend 🔴</option>
                     <option value="Mittel" selected>Mittel 🟡</option>
                     <option value="Niedrig">Niedrig 🟢</option>
                 </select>
             </div>
             <div class="flex space-x-2 pt-2">
-                <button onclick="closeAddIssueModal()" class="flex-1 bg-slate-800 text-slate-300 py-2.5 rounded-2xl font-bold">Abbrechen</button>
-                <button onclick="saveNewIssue()" class="flex-1 bg-amber-500 text-slate-950 py-2.5 rounded-2xl font-bold">Eintragen</button>
+                <button onclick="closeAddIssueModal()" class="flex-1 bg-slate-100 text-slate-700 py-2.5 rounded-2xl text-xs font-bold hover:bg-slate-200 transition">Abbrechen</button>
+                <button onclick="saveNewIssue()" class="flex-1 bg-amber-500 text-white py-2.5 rounded-2xl text-xs font-bold hover:bg-amber-600 transition shadow-sm">Eintragen</button>
             </div>
         </div>
     </div>
 
     <!-- MODAL: TAG-BEARBEITUNG -->
-    <div id="routineDayModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-slate-800 w-full max-w-sm rounded-3xl p-5 space-y-4 shadow-2xl">
-            <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+    <div id="routineDayModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white border border-emerald-100 w-full max-w-sm rounded-3xl p-5 space-y-4 shadow-2xl">
+            <div class="flex justify-between items-center border-b border-emerald-100 pb-2">
                 <div>
-                    <h3 id="routineDayModalTitle" class="font-bold text-base text-white">Datum</h3>
-                    <p class="text-[10px] text-slate-400">Einträge bearbeiten oder nachtragen</p>
+                    <h3 id="routineDayModalTitle" class="font-bold text-base text-slate-900">Datum</h3>
+                    <p class="text-[10px] text-slate-500">Einträge bearbeiten oder nachtragen</p>
                 </div>
-                <button onclick="closeRoutineDayModal()" class="w-7 h-7 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white">
+                <button onclick="closeRoutineDayModal()" class="w-7 h-7 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 hover:text-slate-800">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
 
             <div class="space-y-2">
-                <span class="text-xs font-bold text-slate-300 block">Erledigt am diesem Tag:</span>
+                <span class="text-xs font-bold text-slate-700 block">Erledigt am diesem Tag:</span>
                 <div id="routineDayEntriesList" class="space-y-1.5 max-h-36 overflow-y-auto"></div>
             </div>
 
-            <div class="pt-2 border-t border-slate-800 space-y-3">
-                <span class="text-xs font-bold text-slate-300 block">Eintrag / Nachtrag hinzufügen:</span>
+            <div class="pt-2 border-t border-emerald-100 space-y-3">
+                <span class="text-xs font-bold text-slate-700 block">Eintrag / Nachtrag hinzufügen:</span>
                 <div class="space-y-2">
                     <div>
-                        <label class="text-[10px] text-slate-400 font-bold block mb-1">Standard-Routine wählen...</label>
-                        <select id="routineNachtragSelect" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-2.5 py-2 text-xs text-white focus:outline-none focus:border-indigo-500"></select>
+                        <label class="text-[10px] text-slate-500 font-bold block mb-1">Standard-Routine wählen...</label>
+                        <select id="routineNachtragSelect" class="w-full bg-slate-50 border border-emerald-200 rounded-xl px-2.5 py-2 text-xs text-slate-800 focus:outline-none focus:border-indigo-500"></select>
                     </div>
                     <div>
-                        <label class="text-[10px] text-slate-400 font-bold block mb-1">...oder eigener Text:</label>
-                        <input type="text" id="routineCustomTextInput" placeholder="Z. B. 1 Sack Ziegenfutter neu angebrochen..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-indigo-500">
+                        <label class="text-[10px] text-slate-500 font-bold block mb-1">...oder eigener Text:</label>
+                        <input type="text" id="routineCustomTextInput" placeholder="Z. B. 1 Sack Ziegenfutter neu angebrochen..." class="w-full bg-slate-50 border border-emerald-200 rounded-xl px-3 py-2 text-xs text-slate-800 focus:outline-none focus:border-indigo-500">
                     </div>
-                    <div class="p-2.5 bg-slate-950/60 rounded-xl border border-slate-800 flex items-center justify-between">
+                    <div class="p-2.5 bg-emerald-50/50 rounded-xl border border-emerald-100 flex items-center justify-between">
                         <div>
-                            <span class="text-xs font-bold text-slate-200 block">-1 Vom Vorrat abziehen?</span>
+                            <span class="text-xs font-bold text-slate-800 block">-1 Vom Vorrat abziehen?</span>
                             <span class="text-[9px] text-slate-500 block">Aktualisiert automatisch die Vorrats-Ampel</span>
                         </div>
-                        <input type="checkbox" id="routineDeductStock" class="rounded border-slate-700 text-emerald-500 focus:ring-0 w-4 h-4">
+                        <input type="checkbox" id="routineDeductStock" class="rounded border-emerald-300 text-emerald-600 focus:ring-0 w-4 h-4">
                     </div>
                 </div>
-                <button onclick="saveNachtragForDay()" class="w-full bg-indigo-500 text-slate-950 font-bold py-2.5 rounded-2xl text-xs hover:bg-indigo-400 transition shadow-md shadow-indigo-500/20">Eintrag Speichern</button>
+                <button onclick="saveNachtragForDay()" class="w-full bg-indigo-500 text-white font-bold py-2.5 rounded-2xl text-xs hover:bg-indigo-600 transition shadow-md shadow-indigo-500/20">Eintrag Speichern</button>
             </div>
         </div>
     </div>
 
     <!-- MODAL: ROUTINE ANLEGEN -->
-    <div id="routineModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-slate-800 w-full max-w-sm rounded-3xl p-5 space-y-4 shadow-2xl">
-            <h3 class="font-bold text-base text-white">Neue Routine anlegen</h3>
+    <div id="routineModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white border border-emerald-100 w-full max-w-sm rounded-3xl p-5 space-y-4 shadow-2xl">
+            <h3 class="font-bold text-base text-slate-900">Neue Routine anlegen</h3>
             <div class="space-y-3">
                 <div>
-                    <label class="text-[11px] font-bold text-slate-400 block mb-1">Bezeichnung</label>
-                    <input type="text" id="routineTitle" placeholder="Z. B. Heuballen oben..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-white">
+                    <label class="text-[11px] font-bold text-slate-500 block mb-1">Bezeichnung</label>
+                    <input type="text" id="routineTitle" placeholder="Z. B. Heuballen oben..." class="w-full bg-slate-50 border border-emerald-200 rounded-xl px-3 py-2 text-xs text-slate-800">
                 </div>
                 <div class="grid grid-cols-2 gap-2">
                     <div>
-                        <label class="text-[11px] font-bold text-slate-400 block mb-1">Kategorie</label>
-                        <select id="routineCategory" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-2.5 py-2 text-xs text-white">
+                        <label class="text-[11px] font-bold text-slate-500 block mb-1">Kategorie</label>
+                        <select id="routineCategory" class="w-full bg-slate-50 border border-emerald-200 rounded-xl px-2.5 py-2 text-xs text-slate-800">
                             <option value="Heu & Futter">🌾 Heu & Futter</option>
                             <option value="Lecksteine">🧂 Lecksteine</option>
                             <option value="Gesundheit & Vet">💊 Vet & Wurmpaste</option>
@@ -899,25 +899,25 @@
                         </select>
                     </div>
                     <div>
-                        <label class="text-[11px] font-bold text-slate-400 block mb-1">Intervall (Tage)</label>
-                        <input type="number" id="routineInterval" value="5" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-white">
+                        <label class="text-[11px] font-bold text-slate-500 block mb-1">Intervall (Tage)</label>
+                        <input type="number" id="routineInterval" value="5" class="w-full bg-slate-50 border border-emerald-200 rounded-xl px-3 py-2 text-xs text-slate-800">
                     </div>
                 </div>
             </div>
             <div class="flex space-x-2 pt-2">
-                <button onclick="closeRoutineModal()" class="flex-1 bg-slate-800 text-slate-300 py-2.5 rounded-2xl text-xs font-bold">Abbrechen</button>
-                <button onclick="saveNewRoutine()" class="flex-1 bg-indigo-500 text-slate-950 py-2.5 rounded-2xl text-xs font-bold">Speichern</button>
+                <button onclick="closeRoutineModal()" class="flex-1 bg-slate-100 text-slate-700 py-2.5 rounded-2xl text-xs font-bold hover:bg-slate-200 transition">Abbrechen</button>
+                <button onclick="saveNewRoutine()" class="flex-1 bg-indigo-500 text-white py-2.5 rounded-2xl text-xs font-bold hover:bg-indigo-600 transition shadow-sm">Speichern</button>
             </div>
         </div>
     </div>
 
     <!-- MODAL: STALLDIENST BEARBEITEN -->
-    <div id="shiftModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-slate-800 w-full max-w-sm rounded-3xl p-5 space-y-4 shadow-2xl">
-            <h3 id="modalShiftTitle" class="font-bold text-base text-white">Stalldienst bearbeiten</h3>
+    <div id="shiftModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white border border-emerald-100 w-full max-w-sm rounded-3xl p-5 space-y-4 shadow-2xl">
+            <h3 id="modalShiftTitle" class="font-bold text-base text-slate-900">Stalldienst bearbeiten</h3>
             <div>
-                <label class="text-xs font-bold text-slate-400 block mb-1">Zuständige Person</label>
-                <select id="shiftPersonSelect" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs font-bold text-white">
+                <label class="text-xs font-bold text-slate-500 block mb-1">Zuständige Person</label>
+                <select id="shiftPersonSelect" class="w-full bg-slate-50 border border-emerald-200 rounded-xl px-3 py-2 text-xs font-bold text-slate-800">
                     <option value="Daniela">Daniela</option>
                     <option value="July">July</option>
                     <option value="Margit">Margit</option>
@@ -926,23 +926,23 @@
                 </select>
             </div>
             <div class="flex space-x-2 pt-2">
-                <button onclick="closeShiftModal()" class="flex-1 bg-slate-800 text-slate-300 py-2.5 rounded-2xl text-xs font-bold">Abbrechen</button>
-                <button onclick="saveShiftChange()" class="flex-1 bg-brand-500 text-slate-950 py-2.5 rounded-2xl text-xs font-bold">Speichern</button>
+                <button onclick="closeShiftModal()" class="flex-1 bg-slate-100 text-slate-700 py-2.5 rounded-2xl text-xs font-bold hover:bg-slate-200 transition">Abbrechen</button>
+                <button onclick="saveShiftChange()" class="flex-1 bg-brand-500 text-white py-2.5 rounded-2xl text-xs font-bold hover:bg-brand-600 transition shadow-sm">Speichern</button>
             </div>
         </div>
     </div>
 
     <!-- MODAL: NOTIZ ERSTELLEN -->
-    <div id="noteModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-slate-900 border border-slate-800 w-full max-w-sm rounded-3xl p-5 space-y-4 shadow-2xl">
-            <h3 class="font-bold text-base text-white">Neue Notiz fürs Schwarze Brett</h3>
+    <div id="noteModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white border border-emerald-100 w-full max-w-sm rounded-3xl p-5 space-y-4 shadow-2xl">
+            <h3 class="font-bold text-base text-slate-900">Neue Notiz fürs Schwarze Brett</h3>
             <div>
-                <input type="text" id="noteAuthor" placeholder="Dein Name" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-white mb-2">
-                <textarea id="noteContent" rows="3" placeholder="Wichtige Info für alle..." class="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs text-white"></textarea>
+                <input type="text" id="noteAuthor" placeholder="Dein Name" class="w-full bg-slate-50 border border-emerald-200 rounded-xl px-3 py-2 text-xs text-slate-800 mb-2">
+                <textarea id="noteContent" rows="3" placeholder="Wichtige Info für alle..." class="w-full bg-slate-50 border border-emerald-200 rounded-xl p-3 text-xs text-slate-800"></textarea>
             </div>
             <div class="flex space-x-2">
-                <button onclick="closeNoteModal()" class="flex-1 bg-slate-800 text-slate-300 py-2.5 rounded-2xl text-xs font-bold">Abbrechen</button>
-                <button onclick="saveNewNote()" class="flex-1 bg-amber-500 text-slate-950 py-2.5 rounded-2xl text-xs font-bold">Veröffentlichen</button>
+                <button onclick="closeNoteModal()" class="flex-1 bg-slate-100 text-slate-700 py-2.5 rounded-2xl text-xs font-bold hover:bg-slate-200 transition">Abbrechen</button>
+                <button onclick="saveNewNote()" class="flex-1 bg-amber-500 text-white py-2.5 rounded-2xl text-xs font-bold hover:bg-amber-600 transition shadow-sm">Veröffentlichen</button>
             </div>
         </div>
     </div>
@@ -1094,7 +1094,7 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
             let todayStr = new Date().toISOString().split('T')[0];
 
             for(let i = 0; i < startOffset; i++) {
-                html += `<div class="h-16 bg-slate-950/30 rounded-xl border border-slate-900 opacity-20"></div>`;
+                html += `<div class="h-16 bg-slate-100 rounded-xl border border-slate-200 opacity-40"></div>`;
             }
 
             for(let day = 1; day <= daysInMonth; day++) {
@@ -1111,15 +1111,15 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
                 let hasAnyContent = hasTraining || koppelHrs !== null || dayNotesArr.length > 0;
 
                 html += `
-                    <div onclick="openHorseCalendarDayModal('${dateStr}')" class="h-20 rounded-xl border p-1 flex flex-col justify-between cursor-pointer transition ${isToday ? 'border-amber-400 bg-amber-500/10 font-bold' : hasTraining ? 'bg-emerald-500/15 border-emerald-500/40 hover:bg-emerald-500/25' : 'bg-slate-950/60 border-slate-800 hover:border-slate-700'}">
+                    <div onclick="openHorseCalendarDayModal('${dateStr}')" class="h-20 rounded-xl border p-1 flex flex-col justify-between cursor-pointer transition ${isToday ? 'border-amber-400 bg-amber-50 font-bold shadow-sm' : hasTraining ? 'bg-emerald-50 border-emerald-300 hover:bg-emerald-100/60 shadow-sm' : 'bg-white border-slate-200 hover:border-slate-300'}">
                         <div class="flex justify-between items-center w-full">
-                            <span class="text-[10px] ${isToday ? 'text-amber-400 font-extrabold' : 'text-slate-400'}">${day}</span>
-                            ${hasTraining ? '<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>' : ''}
+                            <span class="text-[10px] ${isToday ? 'text-amber-700 font-extrabold' : 'text-slate-500'}">${day}</span>
+                            ${hasTraining ? '<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>' : ''}
                         </div>
                         <div class="space-y-0.5 text-[8px] overflow-hidden">
-                            ${koppelHrs !== null ? `<div class="text-amber-300 font-bold truncate">⏱️ ${koppelHrs}h</div>` : ''}
-                            ${dayNotesArr.length > 0 ? `<div class="text-indigo-300 truncate">📝 ${dayNotesArr.length} Notiz</div>` : ''}
-                            ${acts.length > 0 ? `<div class="text-emerald-300 truncate font-semibold">${acts.join(', ')}</div>` : (!koppelHrs && dayNotesArr.length === 0 ? '<div class="text-slate-500">Leeres Tagebuch</div>' : '')}
+                            ${koppelHrs !== null ? `<div class="text-amber-700 font-bold truncate">⏱️ ${koppelHrs}h</div>` : ''}
+                            ${dayNotesArr.length > 0 ? `<div class="text-indigo-600 truncate">📝 ${dayNotesArr.length} Notiz</div>` : ''}
+                            ${acts.length > 0 ? `<div class="text-emerald-800 truncate font-semibold">${acts.join(', ')}</div>` : (!koppelHrs && dayNotesArr.length === 0 ? '<div class="text-slate-400">Leeres Tagebuch</div>' : '')}
                         </div>
                     </div>
                 `;
@@ -1171,14 +1171,14 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
             let notes = (horse.dayNotes && horse.dayNotes[dateStr]) ? horse.dayNotes[dateStr] : [];
             
             if (notes.length === 0) {
-                container.innerHTML = `<span class="text-[10px] text-slate-500 italic">Keine Notizen an diesem Tag.</span>`;
+                container.innerHTML = `<span class="text-[10px] text-slate-400 italic">Keine Notizen an diesem Tag.</span>`;
                 return;
             }
 
             container.innerHTML = notes.map((note, idx) => `
-                <div class="bg-slate-900 p-1.5 rounded-lg border border-slate-800 flex justify-between items-center text-[11px] text-slate-200">
+                <div class="bg-white p-1.5 rounded-lg border border-emerald-100 flex justify-between items-center text-[11px] text-slate-700 shadow-sm">
                     <span class="truncate pr-2">${note}</span>
-                    <button onclick="removeDayNote('${dateStr}', ${idx})" class="text-slate-500 hover:text-rose-400 p-1"><i class="fa-solid fa-trash-can text-[10px]"></i></button>
+                    <button onclick="removeDayNote('${dateStr}', ${idx})" class="text-slate-400 hover:text-rose-600 p-1"><i class="fa-solid fa-trash-can text-[10px]"></i></button>
                 </div>
             `).join('');
         }
@@ -1223,28 +1223,27 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
                 let isSel = dayActs.includes(act.id);
                 return `
                     <button onclick="toggleHistoryActivityForHorse(${horse.id}, '${dateStr}', '${act.id}'); openHorseCalendarDayModal('${dateStr}');" 
-                            class="w-full text-xs p-2.5 rounded-xl border transition flex items-center justify-between ${isSel ? 'bg-brand-500 text-slate-950 font-bold border-brand-400' : 'bg-slate-950 text-slate-300 border-slate-800 hover:border-slate-700'}">
+                            class="w-full text-xs p-2.5 rounded-xl border transition flex items-center justify-between shadow-sm ${isSel ? 'bg-brand-500 text-white font-bold border-brand-400' : 'bg-white text-slate-700 border-slate-200 hover:border-emerald-300'}">
                         <span>${act.name}</span>
                         <span>${isSel ? '✓' : '+'}</span>
                     </button>
                 `;
             }).join('');
 
-            // Eigene Aktivitäten des Tages, die nicht in ALL_ACTIVITIES sind
             let customActs = dayActs.filter(a => !ALL_ACTIVITIES.some(def => def.id === a));
             customActs.forEach(customAct => {
                 html += `
-                    <div class="w-full text-xs p-2.5 rounded-xl border bg-brand-500 text-slate-950 font-bold border-brand-400 flex items-center justify-between">
+                    <div class="w-full text-xs p-2.5 rounded-xl border bg-brand-500 text-white font-bold border-brand-400 flex items-center justify-between shadow-sm">
                         <span>✨ ${customAct}</span>
-                        <button onclick="toggleHistoryActivityForHorse(${horse.id}, '${dateStr}', '${customAct}'); openHorseCalendarDayModal('${dateStr}');" class="text-slate-950 hover:text-rose-900 px-1 font-bold">×</button>
+                        <button onclick="toggleHistoryActivityForHorse(${horse.id}, '${dateStr}', '${customAct}'); openHorseCalendarDayModal('${dateStr}');" class="text-white hover:text-rose-200 px-1 font-bold">×</button>
                     </div>
                 `;
             });
 
             html += `
                 <div class="pt-2 flex space-x-2">
-                    <input type="text" id="customDayActivityInput_${dateStr}" placeholder="Eigene Aktivität..." class="flex-1 bg-slate-900 border border-slate-800 rounded-xl px-3 py-1.5 text-xs text-white">
-                    <button onclick="addCustomDayActivity('${dateStr}')" class="bg-brand-500 text-slate-950 font-bold px-3 py-1.5 rounded-xl text-xs hover:bg-brand-400 transition">+</button>
+                    <input type="text" id="customDayActivityInput_${dateStr}" placeholder="Eigene Aktivität..." class="flex-1 bg-white border border-emerald-200 rounded-xl px-3 py-1.5 text-xs text-slate-800">
+                    <button onclick="addCustomDayActivity('${dateStr}')" class="bg-brand-500 text-white font-bold px-3 py-1.5 rounded-xl text-xs hover:bg-brand-600 transition shadow-sm">+</button>
                 </div>
             `;
 
@@ -1341,17 +1340,17 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
         function renderContactsList() {
             const container = document.getElementById('contactsContainer');
             container.innerHTML = contacts.map((c, idx) => `
-                <div class="p-3 bg-slate-950/60 rounded-2xl border border-slate-800 flex items-center justify-between">
+                <div class="p-3 bg-emerald-50/40 rounded-2xl border border-emerald-100 flex items-center justify-between shadow-sm">
                     <div>
-                        <span class="font-bold text-white text-xs block">${c.name}</span>
-                        <span class="text-[10px] text-slate-400 block">${c.role}</span>
-                        <span class="text-[10px] text-amber-400 block font-mono">${c.phone}</span>
+                        <span class="font-bold text-slate-900 text-xs block">${c.name}</span>
+                        <span class="text-[10px] text-slate-500 block">${c.role}</span>
+                        <span class="text-[10px] text-amber-700 block font-mono font-semibold">${c.phone}</span>
                     </div>
                     <div class="flex items-center space-x-1.5">
-                        <a href="tel:${c.phone}" class="bg-rose-500/20 text-rose-300 border border-rose-500/40 p-2 rounded-xl text-xs font-bold hover:bg-rose-500/30 transition">
+                        <a href="tel:${c.phone}" class="bg-rose-100 text-rose-700 border border-rose-200 p-2 rounded-xl text-xs font-bold hover:bg-rose-200 transition shadow-sm">
                             <i class="fa-solid fa-phone text-xs"></i>
                         </a>
-                        <button onclick="deleteContact(${idx})" class="bg-slate-800 text-slate-400 hover:text-rose-400 p-2 rounded-xl text-xs transition">
+                        <button onclick="deleteContact(${idx})" class="bg-slate-100 text-slate-400 hover:text-rose-600 p-2 rounded-xl text-xs transition">
                             <i class="fa-solid fa-trash text-xs"></i>
                         </button>
                     </div>
@@ -1468,10 +1467,10 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
                 Object.values(horse.history).forEach(arr => totalActs += arr.length);
             }
 
-            if (streak >= 3) badges.push({ icon: '🔥', label: `${streak}d Streak König`, desc: `Diesen Badge erhält dein Pferd, wenn es an mindestens 3 aufeinanderfolgenden Tagen aktiv war! Aktuelle Serie: ${streak} Tage.`, bg: 'bg-amber-500/20 text-amber-300 border-amber-500/30' });
-            if (totalActs >= 5) badges.push({ icon: '⭐', label: 'Fleißiges Lieschen', desc: 'Diesen Badge erhält dein Pferd, wenn es insgesamt mindestens 5 erfasste Aktivitäten absolviert hat.', bg: 'bg-indigo-500/20 text-indigo-300 border-indigo-500/30' });
-            if (totalActs >= 10) badges.push({ icon: '👑', label: 'Hof-Legende', desc: 'Diesen Badge erhält dein Pferd für echte Ausdauer ab 10 erfassten Trainingseinheiten!', bg: 'bg-rose-500/20 text-rose-300 border-rose-500/30' });
-            if (horse.location === 'Koppel') badges.push({ icon: '🌾', label: 'Weide-Genießer', desc: 'Wird automatisch verliehen, solange dein Pferd den Status "Auf Koppel" hat.', bg: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30' });
+            if (streak >= 3) badges.push({ icon: '🔥', label: `${streak}d Streak König`, desc: `Diesen Badge erhält dein Pferd, wenn es an mindestens 3 aufeinanderfolgenden Tagen aktiv war! Aktuelle Serie: ${streak} Tage.`, bg: 'bg-amber-100 text-amber-800 border-amber-300' });
+            if (totalActs >= 5) badges.push({ icon: '⭐', label: 'Fleißiges Lieschen', desc: 'Diesen Badge erhält dein Pferd, wenn es insgesamt mindestens 5 erfasste Aktivitäten absolviert hat.', bg: 'bg-indigo-100 text-indigo-800 border-indigo-300' });
+            if (totalActs >= 10) badges.push({ icon: '👑', label: 'Hof-Legende', desc: 'Diesen Badge erhält dein Pferd für echte Ausdauer ab 10 erfassten Trainingseinheiten!', bg: 'bg-rose-100 text-rose-800 border-rose-300' });
+            if (horse.location === 'Koppel') badges.push({ icon: '🌾', label: 'Weide-Genießer', desc: 'Wird automatisch verliehen, solange dein Pferd den Status "Auf Koppel" hat.', bg: 'bg-emerald-100 text-emerald-800 border-emerald-300' });
 
             return badges;
         }
@@ -1504,9 +1503,9 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
 
             if (activeHorses.length === 0) {
                 feed.innerHTML = `
-                    <div class="bg-slate-950/40 border border-slate-800/80 p-3.5 rounded-2xl text-center space-y-1">
-                        <p class="text-xs text-slate-400">Heute noch keine Aktivitäten erfasst.</p>
-                        <p class="text-[10px] text-brand-400 font-bold">Mach den Anfang im Pferde-Tab! 🐎✨</p>
+                    <div class="bg-emerald-50/50 border border-emerald-100 p-3.5 rounded-2xl text-center space-y-1 shadow-sm">
+                        <p class="text-xs text-slate-500">Heute noch keine Aktivitäten erfasst.</p>
+                        <p class="text-[10px] text-brand-600 font-bold">Mach den Anfang im Pferde-Tab! 🐎✨</p>
                     </div>
                 `;
                 return;
@@ -1516,17 +1515,17 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
                 let streak = calculateHorseStreak(h);
                 let acts = h.history[todayStr].join(', ');
                 return `
-                    <div onclick="openHorseModal(${h.id})" class="bg-slate-950/60 border border-slate-800 p-2.5 rounded-2xl flex items-center justify-between cursor-pointer hover:border-slate-700 transition">
+                    <div onclick="openHorseModal(${h.id})" class="bg-emerald-50/40 border border-emerald-100 p-2.5 rounded-2xl flex items-center justify-between cursor-pointer hover:bg-emerald-50/80 transition shadow-sm">
                         <div class="flex items-center space-x-3">
-                            <div class="w-8 h-8 rounded-xl bg-brand-500/20 text-brand-400 flex items-center justify-center text-xs font-bold">
+                            <div class="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold shadow-sm">
                                 <i class="fa-solid fa-horse"></i>
                             </div>
                             <div>
-                                <h4 class="text-xs font-bold text-white">${h.name}</h4>
-                                <span class="text-[10px] text-emerald-400 font-medium">${acts}</span>
+                                <h4 class="text-xs font-bold text-slate-900">${h.name}</h4>
+                                <span class="text-[10px] text-emerald-700 font-medium">${acts}</span>
                             </div>
                         </div>
-                        ${streak > 0 ? `<span class="bg-amber-500/20 text-amber-300 border border-amber-500/30 text-[10px] px-2 py-0.5 rounded-full font-bold flex items-center space-x-1"><i class="fa-solid fa-fire text-amber-400 text-[9px]"></i><span>${streak}d Streak</span></span>` : ''}
+                        ${streak > 0 ? `<span class="bg-amber-100 text-amber-800 border border-amber-200 text-[10px] px-2 py-0.5 rounded-full font-bold flex items-center space-x-1 shadow-sm"><i class="fa-solid fa-fire text-amber-600 text-[9px]"></i><span>${streak}d Streak</span></span>` : ''}
                     </div>
                 `;
             }).join('');
@@ -1543,28 +1542,28 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
                 let durationText = formatDuration(h.locationSince);
 
                 return `
-                    <div onclick="openHorseModal(${h.id})" class="bg-slate-900/90 p-4 rounded-3xl border border-slate-800 flex flex-col space-y-2 cursor-pointer hover:border-slate-700 transition">
+                    <div onclick="openHorseModal(${h.id})" class="bg-white p-4 rounded-3xl border border-emerald-100 flex flex-col space-y-2 cursor-pointer hover:border-emerald-300 transition shadow-md">
                         <div class="flex justify-between items-center">
                             <div>
-                                <h4 class="font-bold text-white text-sm">${h.name}</h4>
-                                <span class="text-[10px] text-slate-400">Futter morgens: ${h.feedMorgens || 'Keines'}</span>
+                                <h4 class="font-bold text-slate-900 text-sm">${h.name}</h4>
+                                <span class="text-[10px] text-slate-500">Futter morgens: ${h.feedMorgens || 'Keines'}</span>
                             </div>
                             <div class="text-right">
-                                <span class="text-[11px] px-2.5 py-1 rounded-full font-bold block ${h.location === 'Koppel' ? 'bg-emerald-500/10 text-emerald-400' : 'bg-amber-500/10 text-amber-400'}">${h.location}</span>
+                                <span class="text-[11px] px-2.5 py-1 rounded-full font-bold block ${h.location === 'Koppel' ? 'bg-emerald-100 text-emerald-800 border border-emerald-200' : 'bg-amber-100 text-amber-800 border border-amber-200'}">${h.location}</span>
                                 <span class="text-[9px] text-slate-400 font-medium block mt-0.5">${durationText}</span>
                             </div>
                         </div>
 
                         ${todayActs.length > 0 ? `
-                            <div class="text-[10px] bg-brand-500/10 border border-brand-500/30 text-brand-300 px-2.5 py-1 rounded-xl font-bold flex items-center space-x-1">
+                            <div class="text-[10px] bg-emerald-50 border border-emerald-200 text-emerald-800 px-2.5 py-1 rounded-xl font-bold flex items-center space-x-1 shadow-sm">
                                 <i class="fa-solid fa-check text-[9px]"></i>
                                 <span>Heute: ${todayActs.join(', ')}</span>
                             </div>
                         ` : ''}
 
                         ${badges.length > 0 ? `
-                            <div class="flex flex-wrap gap-1 pt-1 border-t border-slate-800/60">
-                                ${badges.map(b => `<button onclick="event.stopPropagation(); showBadgeInfo('${b.icon}', '${b.label}', '${b.desc}')" class="text-[9px] border px-2 py-0.5 rounded-full font-bold ${b.bg}">${b.icon} ${b.label}</button>`).join('')}
+                            <div class="flex flex-wrap gap-1 pt-1 border-t border-slate-100">
+                                ${badges.map(b => `<button onclick="event.stopPropagation(); showBadgeInfo('${b.icon}', '${b.label}', '${b.desc}')" class="text-[9px] border px-2 py-0.5 rounded-full font-bold shadow-sm ${b.bg}">${b.icon} ${b.label}</button>`).join('')}
                             </div>
                         ` : ''}
                     </div>
@@ -1612,9 +1611,9 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
             let badges = getHorseBadges(horse);
             const badgesContainer = document.getElementById('modalHorseBadges');
             if (badges.length > 0) {
-                badgesContainer.innerHTML = badges.map(b => `<button onclick="showBadgeInfo('${b.icon}', '${b.label}', '${b.desc}')" class="text-[10px] border px-2.5 py-1 rounded-full font-bold ${b.bg}">${b.icon} ${b.label}</button>`).join('');
+                badgesContainer.innerHTML = badges.map(b => `<button onclick="showBadgeInfo('${b.icon}', '${b.label}', '${b.desc}')" class="text-[10px] border px-2.5 py-1 rounded-full font-bold shadow-sm ${b.bg}">${b.icon} ${b.label}</button>`).join('');
             } else {
-                badgesContainer.innerHTML = `<span class="text-[10px] text-slate-500 italic">Noch keine Badges gesammelt. Ab in die Halle! 🐎</span>`;
+                badgesContainer.innerHTML = `<span class="text-[10px] text-slate-400 italic">Noch keine Badges gesammelt. Ab in die Halle! 🐎</span>`;
             }
 
             renderModalActivityButtons(horse);
@@ -1644,8 +1643,8 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
             let html = ALL_ACTIVITIES.map(act => {
                 let isSelected = currentActs.includes(act.id);
                 let btnStyle = isSelected 
-                    ? 'bg-brand-500 text-slate-950 font-extrabold border-brand-400 shadow-lg shadow-brand-500/20' 
-                    : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700 font-medium';
+                    ? 'bg-brand-500 text-white font-extrabold border-brand-400 shadow-md shadow-brand-500/20' 
+                    : 'bg-white text-slate-700 border-slate-200 hover:border-emerald-300 font-medium shadow-sm';
 
                 return `
                     <button onclick="toggleHorseActivity('${act.id}')" class="p-2.5 rounded-xl border text-xs transition flex items-center justify-between ${btnStyle}">
@@ -1655,11 +1654,10 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
                 `;
             }).join('');
 
-            // Eigene benutzerdefinierte Aktivitäten für heute anzeigen
             let customActs = currentActs.filter(a => !ALL_ACTIVITIES.some(def => def.id === a));
             customActs.forEach(customAct => {
                 html += `
-                    <button onclick="toggleHorseActivity('${customAct}')" class="p-2.5 rounded-xl border text-xs transition flex items-center justify-between bg-brand-500 text-slate-950 font-extrabold border-brand-400 shadow-lg shadow-brand-500/20">
+                    <button onclick="toggleHorseActivity('${customAct}')" class="p-2.5 rounded-xl border text-xs transition flex items-center justify-between bg-brand-500 text-white font-extrabold border-brand-400 shadow-md shadow-brand-500/20">
                         <span>✨ ${customAct}</span>
                         <i class="fa-solid fa-circle-check text-xs"></i>
                     </button>
@@ -1720,7 +1718,7 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
         function renderStockItems() {
             const container = document.getElementById('stockItemsContainer');
             if(stockItems.length === 0) {
-                container.innerHTML = `<p class="text-xs text-slate-500 italic text-center py-2">Keine Vorräte erfasst.</p>`;
+                container.innerHTML = `<p class="text-xs text-slate-400 italic text-center py-2">Keine Vorräte erfasst.</p>`;
                 return;
             }
 
@@ -1742,26 +1740,26 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
                 estimatedEndDate.setDate(today.getDate() + daysRemaining);
                 let dateFormatted = estimatedEndDate.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit' });
 
-                let badgeColor = daysRemaining > 10 ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30' :
-                                 daysRemaining >= 4 ? 'bg-amber-500/20 text-amber-300 border-amber-500/30' :
-                                 'bg-rose-500/20 text-rose-300 border-rose-500/30 animate-pulse';
+                let badgeColor = daysRemaining > 10 ? 'bg-emerald-100 text-emerald-800 border-emerald-200' :
+                                 daysRemaining >= 4 ? 'bg-amber-100 text-amber-800 border-amber-200' :
+                                 'bg-rose-100 text-rose-800 border-rose-200 animate-pulse';
 
                 return `
-                    <div class="p-3 bg-slate-950/60 rounded-2xl border border-slate-800 space-y-2">
+                    <div class="p-3 bg-emerald-50/40 rounded-2xl border border-emerald-100 space-y-2 shadow-sm">
                         <div class="flex justify-between items-center">
                             <div>
-                                <span class="font-bold text-white block">${item.name}</span>
-                                <span class="text-[10px] text-slate-400">Verbrauch: ca. alle ${intervalDays} Tage (1 ${item.unit})</span>
+                                <span class="font-bold text-slate-900 block">${item.name}</span>
+                                <span class="text-[10px] text-slate-500">Verbrauch: ca. alle ${intervalDays} Tage (1 ${item.unit})</span>
                             </div>
-                            <span class="text-xs font-extrabold border px-2.5 py-1 rounded-full ${badgeColor}">
+                            <span class="text-xs font-extrabold border px-2.5 py-1 rounded-full shadow-sm ${badgeColor}">
                                 ${item.count} ${item.unit}
                             </span>
                         </div>
-                        <div class="flex justify-between items-center pt-2 border-t border-slate-800/60 text-[10px]">
-                            <span class="text-slate-300">⏳ Reicht noch ca. <strong class="text-amber-400">${daysRemaining} Tage</strong> (bis ${dateFormatted})</span>
+                        <div class="flex justify-between items-center pt-2 border-t border-emerald-100 text-[10px]">
+                            <span class="text-slate-600">⏳ Reicht noch ca. <strong class="text-amber-700">${daysRemaining} Tage</strong> (bis ${dateFormatted})</span>
                             <div class="flex space-x-1">
-                                <button onclick="adjustStockCount(${idx}, -1)" class="bg-slate-800 text-slate-300 hover:text-white px-2 py-1 rounded-lg border border-slate-700 font-bold">-1</button>
-                                <button onclick="adjustStockCount(${idx}, 1)" class="bg-emerald-500/20 text-emerald-300 hover:bg-emerald-500/30 px-2 py-1 rounded-lg border border-emerald-500/40 font-bold">+1 Nachschub</button>
+                                <button onclick="adjustStockCount(${idx}, -1)" class="bg-white text-slate-700 hover:bg-slate-100 px-2 py-1 rounded-lg border border-slate-200 font-bold shadow-sm">-1</button>
+                                <button onclick="adjustStockCount(${idx}, 1)" class="bg-emerald-100 text-emerald-800 hover:bg-emerald-200 px-2 py-1 rounded-lg border border-emerald-200 font-bold shadow-sm">+1 Nachschub</button>
                             </div>
                         </div>
                     </div>
@@ -1868,21 +1866,21 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
         function renderPaddocks() {
             const container = document.getElementById('paddocksContainer');
             if (paddocks.length === 0) {
-                container.innerHTML = `<p class="text-xs text-slate-500 italic col-span-2 text-center py-2">Keine Koppeln eingetragen.</p>`;
+                container.innerHTML = `<p class="text-xs text-slate-400 italic col-span-2 text-center py-2">Keine Koppeln eingetragen.</p>`;
                 return;
             }
 
             container.innerHTML = paddocks.map(p => {
-                let badgeBg = p.status === 'Aktiv' ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30' :
-                              p.status === 'Ruhepause' ? 'bg-amber-500/20 text-amber-300 border-amber-500/30' :
-                              'bg-rose-500/20 text-rose-300 border-rose-500/30';
+                let badgeBg = p.status === 'Aktiv' ? 'bg-emerald-100 text-emerald-800 border-emerald-200' :
+                              p.status === 'Ruhepause' ? 'bg-amber-100 text-amber-800 border-amber-200' :
+                              'bg-rose-100 text-rose-800 border-rose-200';
                 let icon = p.status === 'Aktiv' ? '✅' : p.status === 'Ruhepause' ? '💤' : '🚫';
 
                 return `
-                    <div onclick="openEditPaddockModal(${p.id})" class="bg-slate-950/60 p-3 rounded-2xl border border-slate-800 space-y-1 hover:border-slate-700 transition cursor-pointer">
-                        <span class="font-bold text-slate-200 block truncate">${p.name}</span>
-                        <span class="text-[10px] text-slate-400 block truncate">${p.info || 'Keine Info'}</span>
-                        <span class="text-[9px] border px-2 py-0.5 rounded-full inline-block font-bold ${badgeBg}">${p.status} ${icon}</span>
+                    <div onclick="openEditPaddockModal(${p.id})" class="bg-emerald-50/40 p-3 rounded-2xl border border-emerald-100 space-y-1 hover:border-emerald-300 transition cursor-pointer shadow-sm">
+                        <span class="font-bold text-slate-900 block truncate">${p.name}</span>
+                        <span class="text-[10px] text-slate-500 block truncate">${p.info || 'Keine Info'}</span>
+                        <span class="text-[9px] border px-2 py-0.5 rounded-full inline-block font-bold shadow-sm ${badgeBg}">${p.status} ${icon}</span>
                     </div>
                 `;
             }).join('');
@@ -1958,16 +1956,16 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
         function renderIssues() {
             const list = document.getElementById('issuesList');
             if (issues.length === 0) {
-                list.innerHTML = `<p class="text-xs text-slate-500 italic py-1">Alles in Ordnung! Keine Reparaturen offen.</p>`;
+                list.innerHTML = `<p class="text-xs text-slate-400 italic py-1">Alles in Ordnung! Keine Reparaturen offen.</p>`;
                 return;
             }
             list.innerHTML = issues.map((i, idx) => `
-                <div class="p-2.5 bg-slate-950/60 rounded-2xl border border-slate-800 text-xs flex justify-between items-center">
+                <div class="p-2.5 bg-emerald-50/40 rounded-2xl border border-emerald-100 text-xs flex justify-between items-center shadow-sm">
                     <div class="flex items-center space-x-2">
-                        <span class="w-2 h-2 rounded-full ${i.priority==='Dringend'?'bg-rose-500':i.priority==='Mittel'?'bg-amber-400':'bg-emerald-400'}"></span>
-                        <span class="text-slate-200 font-medium">${i.title}</span>
+                        <span class="w-2 h-2 rounded-full ${i.priority==='Dringend'?'bg-rose-500':i.priority==='Mittel'?'bg-amber-500':'bg-emerald-500'}"></span>
+                        <span class="text-slate-800 font-medium">${i.title}</span>
                     </div>
-                    <button onclick="resolveIssue(${idx})" class="text-[10px] bg-slate-800 text-slate-300 hover:text-emerald-400 px-2 py-1 rounded-lg border border-slate-700">Erledigt</button>
+                    <button onclick="resolveIssue(${idx})" class="text-[10px] bg-white text-slate-700 hover:text-emerald-700 px-2 py-1 rounded-lg border border-slate-200 shadow-sm">Erledigt</button>
                 </div>
             `).join('');
         }
@@ -2002,27 +2000,27 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
             document.getElementById('viewChecklist').classList.add('hidden');
             document.getElementById('viewRoutine').classList.add('hidden');
 
-            document.getElementById('navBtnDashboard').className = "flex flex-col items-center space-y-0.5 text-slate-500 transition";
-            document.getElementById('navBtnHorses').className = "flex flex-col items-center space-y-0.5 text-slate-500 transition";
-            document.getElementById('navBtnShifts').className = "flex flex-col items-center space-y-0.5 text-slate-500 transition";
-            document.getElementById('navBtnChecklist').className = "flex flex-col items-center space-y-0.5 text-slate-500 transition";
-            document.getElementById('navBtnRoutine').className = "flex flex-col items-center space-y-0.5 text-slate-500 transition";
+            document.getElementById('navBtnDashboard').className = "flex flex-col items-center space-y-0.5 text-slate-400 hover:text-slate-600 transition";
+            document.getElementById('navBtnHorses').className = "flex flex-col items-center space-y-0.5 text-slate-400 hover:text-slate-600 transition";
+            document.getElementById('navBtnShifts').className = "flex flex-col items-center space-y-0.5 text-slate-400 hover:text-slate-600 transition";
+            document.getElementById('navBtnChecklist').className = "flex flex-col items-center space-y-0.5 text-slate-400 hover:text-slate-600 transition";
+            document.getElementById('navBtnRoutine').className = "flex flex-col items-center space-y-0.5 text-slate-400 hover:text-slate-600 transition";
 
             if(tab === 'dashboard') {
                 document.getElementById('viewDashboard').classList.remove('hidden');
-                document.getElementById('navBtnDashboard').className = "flex flex-col items-center space-y-0.5 text-brand-400 font-bold transition";
+                document.getElementById('navBtnDashboard').className = "flex flex-col items-center space-y-0.5 text-brand-600 font-bold transition";
             } else if(tab === 'horses') {
                 document.getElementById('viewHorses').classList.remove('hidden');
-                document.getElementById('navBtnHorses').className = "flex flex-col items-center space-y-0.5 text-brand-400 font-bold transition";
+                document.getElementById('navBtnHorses').className = "flex flex-col items-center space-y-0.5 text-brand-600 font-bold transition";
             } else if(tab === 'shifts') {
                 document.getElementById('viewShifts').classList.remove('hidden');
-                document.getElementById('navBtnShifts').className = "flex flex-col items-center space-y-0.5 text-brand-400 font-bold transition";
+                document.getElementById('navBtnShifts').className = "flex flex-col items-center space-y-0.5 text-brand-600 font-bold transition";
             } else if(tab === 'checklist') {
                 document.getElementById('viewChecklist').classList.remove('hidden');
-                document.getElementById('navBtnChecklist').className = "flex flex-col items-center space-y-0.5 text-brand-400 font-bold transition";
+                document.getElementById('navBtnChecklist').className = "flex flex-col items-center space-y-0.5 text-brand-600 font-bold transition";
             } else if(tab === 'routine') {
                 document.getElementById('viewRoutine').classList.remove('hidden');
-                document.getElementById('navBtnRoutine').className = "flex flex-col items-center space-y-0.5 text-brand-400 font-bold transition";
+                document.getElementById('navBtnRoutine').className = "flex flex-col items-center space-y-0.5 text-brand-600 font-bold transition";
             }
         }
 
@@ -2040,10 +2038,10 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
             
             if(isChanged) {
                 badge.innerText = 'Tausch-Dienst 🔁';
-                badge.className = 'bg-rose-500/20 text-rose-300 border border-rose-500/40 text-xs font-extrabold px-3 py-1 rounded-full shadow-sm';
+                badge.className = 'bg-rose-100 text-rose-800 border border-rose-200 text-xs font-extrabold px-3 py-1 rounded-full shadow-sm';
             } else {
                 badge.innerText = 'Regulärer Dienst ✨';
-                badge.className = 'bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs font-bold px-3 py-1 rounded-full shadow-sm';
+                badge.className = 'bg-amber-100 text-amber-800 border border-amber-200 text-xs font-bold px-3 py-1 rounded-full shadow-sm';
             }
         }
 
@@ -2067,7 +2065,7 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
             let todayStr = new Date().toISOString().split('T')[0];
 
             for(let i = 0; i < startOffset; i++) {
-                html += `<div class="h-12 bg-slate-950/30 rounded-xl border border-slate-900 opacity-20"></div>`;
+                html += `<div class="h-12 bg-slate-100 rounded-xl border border-slate-200 opacity-40"></div>`;
             }
 
             for(let day = 1; day <= daysInMonth; day++) {
@@ -2084,12 +2082,12 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
 
                 html += `
                     <div onclick="openShiftModal('${dateStr}', '${dObj.toLocaleDateString('de-DE', {weekday: 'long', day: 'numeric', month: 'long'})}')" 
-                         class="h-12 rounded-xl border p-1 flex flex-col justify-between cursor-pointer transition ${isToday ? 'border-amber-400 bg-amber-500/10 font-bold' : isChanged ? 'bg-rose-500/20 border-rose-500/50 hover:bg-rose-500/30' : 'bg-slate-950/60 border-slate-800 hover:border-slate-700'}">
+                         class="h-12 rounded-xl border p-1 flex flex-col justify-between cursor-pointer transition ${isToday ? 'border-amber-400 bg-amber-50 font-bold shadow-sm' : isChanged ? 'bg-rose-50 border-rose-300 hover:bg-rose-100/60 shadow-sm' : 'bg-white border-slate-200 hover:border-slate-300'}">
                         <div class="flex justify-between items-center w-full">
-                            <span class="text-[10px] ${isToday ? 'text-amber-400 font-extrabold' : 'text-slate-400'}">${day}</span>
-                            ${isChanged ? `<span class="w-1.5 h-1.5 rounded-full bg-rose-400 animate-pulse"></span>` : ''}
+                            <span class="text-[10px] ${isToday ? 'text-amber-700 font-extrabold' : 'text-slate-400'}">${day}</span>
+                            ${isChanged ? `<span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>` : ''}
                         </div>
-                        <span class="text-[9px] font-bold truncate block ${isChanged ? 'text-rose-300' : 'text-slate-200'}">${assignedPerson}</span>
+                        <span class="text-[9px] font-bold truncate block ${isChanged ? 'text-rose-700' : 'text-slate-700'}">${assignedPerson}</span>
                     </div>
                 `;
             }
@@ -2116,7 +2114,7 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
             let todayStr = new Date().toISOString().split('T')[0];
 
             for(let i = 0; i < startOffset; i++) {
-                html += `<div class="h-10 bg-slate-950/30 rounded-xl border border-slate-900 opacity-20"></div>`;
+                html += `<div class="h-10 bg-slate-100 rounded-xl border border-slate-200 opacity-40"></div>`;
             }
 
             for(let day = 1; day <= daysInMonth; day++) {
@@ -2132,12 +2130,12 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
                 let hasEntries = completedAtDay.length > 0;
 
                 html += `
-                    <div onclick="openRoutineDayModal('${dateStr}')" class="h-11 rounded-xl border p-1 flex flex-col justify-between cursor-pointer transition ${isToday ? 'border-amber-500 bg-amber-500/10 font-bold' : hasEntries ? 'bg-indigo-500/15 border-indigo-500/40' : 'bg-slate-950/60 border-slate-800 hover:border-slate-700'}">
+                    <div onclick="openRoutineDayModal('${dateStr}')" class="h-11 rounded-xl border p-1 flex flex-col justify-between cursor-pointer transition ${isToday ? 'border-amber-400 bg-amber-50 font-bold shadow-sm' : hasEntries ? 'bg-indigo-50 border-indigo-300 shadow-sm' : 'bg-white border-slate-200 hover:border-slate-300'}">
                         <div class="flex justify-between items-center w-full">
-                            <span class="text-[10px] ${isToday ? 'text-amber-400 font-extrabold' : 'text-slate-400'}">${day}</span>
-                            ${hasEntries ? `<span class="w-2 h-2 rounded-full bg-indigo-400"></span>` : ''}
+                            <span class="text-[10px] ${isToday ? 'text-amber-700 font-extrabold' : 'text-slate-400'}">${day}</span>
+                            ${hasEntries ? `<span class="w-2 h-2 rounded-full bg-indigo-500"></span>` : ''}
                         </div>
-                        ${hasEntries ? `<span class="text-[8px] font-bold text-indigo-300 truncate block">${completedAtDay.length} Erledigt</span>` : ''}
+                        ${hasEntries ? `<span class="text-[8px] font-bold text-indigo-700 truncate block">${completedAtDay.length} Erledigt</span>` : ''}
                     </div>
                 `;
             }
@@ -2165,14 +2163,14 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
                 }
             });
             if(entries.length === 0) {
-                list.innerHTML = `<p class="text-xs text-slate-500 italic py-2">Keine Einträge an diesem Tag.</p>`;
+                list.innerHTML = `<p class="text-xs text-slate-400 italic py-2">Keine Einträge an diesem Tag.</p>`;
                 return;
             }
             list.innerHTML = entries.map(e => `
-                <div class="bg-slate-950/80 p-2.5 rounded-xl border border-slate-800 flex justify-between items-center text-xs">
+                <div class="bg-emerald-50/40 p-2.5 rounded-xl border border-emerald-100 flex justify-between items-center text-xs shadow-sm">
                     <div>
-                        <span class="font-bold text-slate-200 block">${e.title}</span>
-                        <span class="text-[9px] text-indigo-300 font-semibold">${e.category}</span>
+                        <span class="font-bold text-slate-800 block">${e.title}</span>
+                        <span class="text-[9px] text-indigo-700 font-semibold">${e.category}</span>
                     </div>
                 </div>
             `).join('');
@@ -2181,17 +2179,17 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
         function renderRoutines() {
             const container = document.getElementById('routineList');
             if(routines.length === 0) {
-                container.innerHTML = `<p class="text-xs text-slate-500 italic text-center py-2">Keine Routinen eingetragen.</p>`;
+                container.innerHTML = `<p class="text-xs text-slate-400 italic text-center py-2">Keine Routinen eingetragen.</p>`;
                 return;
             }
             container.innerHTML = routines.map((r, idx) => `
-                <div class="bg-slate-950/60 rounded-2xl p-3.5 border border-slate-800 space-y-2">
+                <div class="bg-emerald-50/40 rounded-2xl p-3.5 border border-emerald-100 space-y-2 shadow-sm">
                     <div class="flex justify-between items-start">
                         <div>
-                            <h4 class="text-xs font-bold text-white">${r.title}</h4>
-                            <p class="text-[10px] text-slate-400 mt-0.5">${r.category} ${r.intervalDays > 0 ? `· alle ${r.intervalDays} Tage` : ''}</p>
+                            <h4 class="text-xs font-bold text-slate-900">${r.title}</h4>
+                            <p class="text-[10px] text-slate-500 mt-0.5">${r.category} ${r.intervalDays > 0 ? `· alle ${r.intervalDays} Tage` : ''}</p>
                         </div>
-                        <button onclick="logRoutineDone(${idx})" class="bg-indigo-500 text-slate-950 font-bold text-[11px] px-3 py-1 rounded-xl">Heute erledigt</button>
+                        <button onclick="logRoutineDone(${idx})" class="bg-indigo-500 text-white font-bold text-[11px] px-3 py-1 rounded-xl shadow-sm hover:bg-indigo-600 transition">Heute erledigt</button>
                     </div>
                 </div>
             `).join('');
@@ -2218,12 +2216,12 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
             const doneCount = checklist.filter(c => c.done).length;
             document.getElementById('checklistProgress').innerText = `${doneCount}/${checklist.length}`;
             container.innerHTML = checklist.map((item, idx) => `
-                <div class="p-3 rounded-2xl border flex items-center justify-between transition ${item.done ? 'bg-brand-500/10 border-brand-500/30' : 'bg-slate-950/60 border-slate-800'}">
+                <div class="p-3 rounded-2xl border flex items-center justify-between transition shadow-sm ${item.done ? 'bg-emerald-50 border-emerald-200' : 'bg-emerald-50/30 border-emerald-100'}">
                     <div onclick="toggleChecklistItem(${idx})" class="flex items-center space-x-3 cursor-pointer flex-1">
-                        <div class="w-5 h-5 rounded-lg border flex items-center justify-center ${item.done ? 'bg-brand-500 border-brand-500 text-slate-950 font-bold' : 'border-slate-700 bg-slate-900'}">
+                        <div class="w-5 h-5 rounded-lg border flex items-center justify-center shadow-sm ${item.done ? 'bg-brand-500 border-brand-500 text-white font-bold' : 'border-slate-300 bg-white'}">
                             ${item.done ? '<i class="fa-solid fa-check text-[10px]"></i>' : ''}
                         </div>
-                        <span class="text-xs font-semibold ${item.done ? 'line-through text-slate-500' : 'text-slate-200'}">${item.label}</span>
+                        <span class="text-xs font-semibold ${item.done ? 'line-through text-slate-400' : 'text-slate-800'}">${item.label}</span>
                     </div>
                 </div>
             `).join('');
@@ -2254,16 +2252,16 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
         function renderShiftNotes() {
             const container = document.getElementById('shiftNotesList');
             if(shiftNotes.length === 0) {
-                container.innerHTML = `<p class="text-xs text-slate-500 italic text-center py-1">Keine Notizen vorhanden.</p>`;
+                container.innerHTML = `<p class="text-xs text-slate-400 italic text-center py-1">Keine Notizen vorhanden.</p>`;
                 return;
             }
             container.innerHTML = shiftNotes.map((n, idx) => `
-                <div class="p-3 bg-slate-950/60 rounded-2xl border border-slate-800 text-xs flex justify-between items-start">
+                <div class="p-3 bg-emerald-50/40 rounded-2xl border border-emerald-100 text-xs flex justify-between items-start shadow-sm">
                     <div>
-                        <span class="font-bold text-amber-400">${n.author}: </span>
-                        <span class="text-slate-300">${n.text}</span>
+                        <span class="font-bold text-amber-700">${n.author}: </span>
+                        <span class="text-slate-700">${n.text}</span>
                     </div>
-                    <button onclick="deleteShiftNote(${idx})" class="text-slate-500 hover:text-rose-400 p-1"><i class="fa-solid fa-trash-can text-xs"></i></button>
+                    <button onclick="deleteShiftNote(${idx})" class="text-slate-400 hover:text-rose-600 p-1"><i class="fa-solid fa-trash-can text-xs"></i></button>
                 </div>
             `).join('');
         }
@@ -2305,11 +2303,11 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
             const btnKoppel = document.getElementById('btnLocKoppel');
             const btnOffenstall = document.getElementById('btnLocOffenstall');
             if (loc === 'Koppel') {
-                btnKoppel.className = 'py-2.5 px-3 rounded-xl text-xs font-bold border bg-emerald-500 text-slate-950 border-emerald-500';
-                btnOffenstall.className = 'py-2.5 px-3 rounded-xl text-xs font-bold border bg-slate-900 text-slate-300 border-slate-800';
+                btnKoppel.className = 'py-2.5 px-3 rounded-xl text-xs font-bold border bg-emerald-500 text-white border-emerald-500 shadow-sm';
+                btnOffenstall.className = 'py-2.5 px-3 rounded-xl text-xs font-bold border bg-white text-slate-700 border-slate-200 shadow-sm';
             } else {
-                btnKoppel.className = 'py-2.5 px-3 rounded-xl text-xs font-bold border bg-slate-900 text-slate-300 border-slate-800';
-                btnOffenstall.className = 'py-2.5 px-3 rounded-xl text-xs font-bold border bg-amber-500 text-slate-950 border-amber-500';
+                btnKoppel.className = 'py-2.5 px-3 rounded-xl text-xs font-bold border bg-white text-slate-700 border-slate-200 shadow-sm';
+                btnOffenstall.className = 'py-2.5 px-3 rounded-xl text-xs font-bold border bg-amber-500 text-white border-amber-500 shadow-sm';
             }
         }
 
@@ -2332,13 +2330,13 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
         function renderModalNotes(horse) {
             const container = document.getElementById('modalHorseNotesList');
             if (!horse.notes || horse.notes.length === 0) {
-                container.innerHTML = `<span class="text-[10px] text-slate-500 italic">Keine Notizen vorhanden.</span>`;
+                container.innerHTML = `<span class="text-[10px] text-slate-400 italic">Keine Notizen vorhanden.</span>`;
                 return;
             }
             container.innerHTML = horse.notes.map((n, idx) => `
-                <div class="bg-slate-900 p-2 rounded-xl text-xs text-slate-300 flex justify-between items-center">
+                <div class="bg-white p-2 rounded-xl text-xs text-slate-700 flex justify-between items-center border border-emerald-100 shadow-sm">
                     <span class="pr-2">${n}</span>
-                    <button onclick="removeHorseNote(${idx})" class="text-slate-500 hover:text-rose-400 p-1"><i class="fa-solid fa-trash-can text-[10px]"></i></button>
+                    <button onclick="removeHorseNote(${idx})" class="text-slate-400 hover:text-rose-600 p-1"><i class="fa-solid fa-trash-can text-[10px]"></i></button>
                 </div>
             `).join('');
         }
@@ -2409,9 +2407,9 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
 
                 daysHtml += `
                     <div onclick="openShiftModal('${dateStr}', '${loopDate.toLocaleDateString('de-DE', {weekday: 'long', day: 'numeric', month: 'long'})}')" 
-                         class="p-3 rounded-2xl border flex justify-between items-center cursor-pointer transition ${isChanged ? 'bg-rose-500/10 border-rose-500/30' : 'bg-slate-950/60 border-slate-800'}">
-                        <span class="text-xs font-bold text-slate-300">${dayName}</span>
-                        <span class="text-xs font-extrabold ${isChanged ? 'text-rose-400' : 'text-brand-400'}">${assignedPerson}</span>
+                         class="p-3 rounded-2xl border flex justify-between items-center cursor-pointer transition shadow-sm ${isChanged ? 'bg-rose-50 border-rose-200' : 'bg-emerald-50/40 border-emerald-100 hover:border-emerald-200'}">
+                        <span class="text-xs font-bold text-slate-700">${dayName}</span>
+                        <span class="text-xs font-extrabold ${isChanged ? 'text-rose-700' : 'text-brand-700'}">${assignedPerson}</span>
                     </div>
                 `;
                 loopDate.setDate(loopDate.getDate() + 1);
@@ -2442,16 +2440,16 @@ Vielen Dank für euer Verständnis und eure Rücksichtnahme ❤️`;
         function renderNotices() {
             const board = document.getElementById('noticeBoard');
             if (notices.length === 0) {
-                board.innerHTML = `<p class="text-xs text-slate-500 italic py-2 text-center">Keine Notizen vorhanden.</p>`;
+                board.innerHTML = `<p class="text-xs text-slate-400 italic py-2 text-center">Keine Notizen vorhanden.</p>`;
                 return;
             }
             board.innerHTML = notices.map(n => `
-                <div class="p-3 bg-slate-950/60 rounded-2xl border border-slate-800 text-xs flex justify-between items-start space-x-2">
+                <div class="p-3 bg-emerald-50/40 rounded-2xl border border-emerald-100 text-xs flex justify-between items-start space-x-2 shadow-sm">
                     <div>
-                        <span class="font-bold text-amber-400">${n.author}: </span>
-                        <span class="text-slate-300">${n.text}</span>
+                        <span class="font-bold text-amber-700">${n.author}: </span>
+                        <span class="text-slate-700">${n.text}</span>
                     </div>
-                    <button onclick="requestDeleteNote(${n.id})" class="text-slate-500 hover:text-rose-400 transition p-1 text-xs shrink-0" title="Notiz löschen">
+                    <button onclick="requestDeleteNote(${n.id})" class="text-slate-400 hover:text-rose-600 transition p-1 text-xs shrink-0" title="Notiz löschen">
                         <i class="fa-solid fa-trash-can"></i>
                     </button>
                 </div>
